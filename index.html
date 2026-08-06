@@ -861,14 +861,32 @@ footer button{border:none;background:none;color:var(--ink-soft);font-family:var(
 
   <!-- ============ TO-DOS ============ -->
   <section id="tab-todos" role="tabpanel">
-    <div class="group" data-list="todo_now">
-      <div class="group-head"><h3>🚨 Vor Abflug (kritisch)</h3></div>
+    <div class="group" data-list="stage_pre">
+      <div class="group-head"><h3>🏁 HEUTE — vor Abfahrt (Mi 06.08., München)</h3></div>
       <div class="bar"><i></i></div>
       <ul class="check"></ul>
       <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
     </div>
-    <div class="group" data-list="todo_trip">
-      <div class="group-head"><h3>📍 Unterwegs erledigen</h3></div>
+    <div class="group" data-list="stage_bremen">
+      <div class="group-head"><h3>🌾 Bremen &amp; Anreise (Fr 07. – So 09.08.)</h3></div>
+      <div class="bar"><i></i></div>
+      <ul class="check"></ul>
+      <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
+    </div>
+    <div class="group" data-list="stage_andalus">
+      <div class="group-head"><h3>🏖 Málaga &amp; Granada (So 09. – Mi 12.08.)</h3></div>
+      <div class="bar"><i></i></div>
+      <ul class="check"></ul>
+      <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
+    </div>
+    <div class="group" data-list="stage_eclipse">
+      <div class="group-head"><h3>🌑 Eclipse &amp; Auto (Mi 12. – Fr 14.08.)</h3></div>
+      <div class="bar"><i></i></div>
+      <ul class="check"></ul>
+      <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
+    </div>
+    <div class="group" data-list="stage_madrid">
+      <div class="group-head"><h3>🏛 Madrid &amp; Heimreise (Fr 14. – So 16.08.)</h3></div>
       <div class="bar"><i></i></div>
       <ul class="check"></ul>
       <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
@@ -1167,23 +1185,49 @@ Regel für morgen: lieber La Paloma kürzen als unpackt ins Bett.</div>
 /* ================= data model ================= */
 const DEFAULTS = {
   lists: {
-    todo_now: [
-      {t:"SoFi-Brillen bestellen (3×, EN ISO 12312-2) — HEUTE", n:"Prime bis Do 7.8. nach München/Bremen; Fallback Optiker Madrid", c:false, crit:true},
-      {t:"Alhambra-Tickets 11.08. checken/buchen — HEUTE", n:"1) offiziell 2) GetYourGuide/Viator-Tour 3) Plan C: nur Alcazaba+Generalife. 'Nasridenpaläste' muss im Titel stehen!", c:false, crit:true},
-      {t:"Campingplatz Raum Sigüenza/Soria für 12.08. reservieren", n:"Wildcampen verboten (Brandlage). Notfalls anrufen.", c:false, crit:true},
-      {t:"Unterkunft Madrid 13./14.–16.08. klären", c:false, crit:true},
-      {t:"Bremen→Hamburg-Zug für So 09.08. buchen", n:"Ankunft spätestens ~10:30 (Flug 13:25, Sonntags-Bahn = Risiko)", c:false, crit:true},
-      {t:"Mietwagen-Buchung prüfen: beide als Fahrer? Kreditkarte für Kaution?", c:false},
-      {t:"Offline-Karten laden (Andalusien + Kastilien) & Buchungen offline speichern", c:false},
-      {t:"Mitbringsel für Max besorgen", n:"Idee: Bremer Kluten / Kaffeebrot / Rum", c:false}
+    stage_pre: [
+      {t:"✅ Alhambra-Tickets 11.08.", n:"GEBUCHT — QRs im Reiseplan, Tag 11", c:true},
+      {t:"✅ Übernachtung Eclipse-Nacht", n:"POGA Épila gebucht (ECL26-1814) — Fallback/Basis, Spot-Entscheidung bleibt offen", c:true},
+      {t:"✅ Unterkunft Madrid", n:"Calle de la Cabeza 11 — gebucht", c:true},
+      {t:"SoFi-Brillen: nach BREMEN (Max) bestellen — JETZT", n:"München klappt nicht mehr (Abfahrt morgen 11:12!). Fallback: Optiker/Apotheke in Spanien, Ausverkaufsrisiko", c:false, crit:true},
+      {t:"Decathlon Sun-Hoody: HEUTE Click&Collect München", n:"Angelshirt Anti-UV 500 Kapuze, LSF 50+, hell — ~25 €", c:false, crit:true},
+      {t:"Bremen→Hamburg-Zug So 09.08. buchen", n:"Ankunft Hbf ≤ 10:15! Sonntags-Bahn = Baustellenrisiko", c:false, crit:true},
+      {t:"Kreditkarten-Limit für Mietwagen-Kaution checken", n:"1.000–1.500 € Block, echte Kreditkarte (keine Debit) auf Hauptfahrer. Zweiter Fahrer eingetragen?", c:false, crit:true},
+      {t:"Frühe Check-outs mit Hosts klären", n:"Málaga 12.08. ~06:15, Madrid 16.08. ~03:45 — Schlüsselbox/Self-Checkout?", c:false, crit:true},
+      {t:"Madrid-Host informieren: Anreise evtl. erst 14.08.", n:"Falls Nacht 13.→14. gebucht ist und ihr 2. Nacht Épila bleibt — sonst No-Show = Stornorisiko der Restbuchung!", c:false, crit:true},
+      {t:"Airline-Check-in 09.08. vorbereiten", n:"Falls Ryanair/easyJet: Online-Check-in + Boardingpass aufs Handy, sonst Schaltergebühr", c:false},
+      {t:"Offline-Karten laden + Buchungen offline speichern", n:"Google Maps: Andalusien + Kastilien + Aragón. PWA auf beide Handys ✓?", c:false},
+      {t:"PACKEN — Packliste-Tab durchgehen", n:"Heute Abend. Taschenmesser ins Aufgabegepäck!", c:false, crit:true}
     ],
-    todo_trip: [
-      {t:"12.08. morgens: AEMET-Wolkenprognose checken → Zielort final festlegen", n:"Bei Wolken im NO weiter Richtung Soria/Zaragoza", c:false, crit:true},
-      {t:"12.08.: Mercadona/Lidl-Großeinkauf in Madrid (Wasser, kaltes Essen, Eis für Kühltasche)", c:false},
-      {t:"12.08.: Volltanken vor Abfahrt aus Madrid", c:false},
-      {t:"12.08. ~17 Uhr: Westhorizont am Spot real verifizieren", c:false},
-      {t:"14.08.: Tanken vor Mietwagen-Rückgabe 17:30", c:false},
-      {t:"15.08. abends: Nachtbus/Taxi für 16.08. ~03:45 klären (Airport Express 203, 24/7)", c:false}
+    stage_bremen: [
+      {t:"Mitbringsel für Max", n:"Falls nicht bestellt: Kluten / Kaffeebrot / Bremer Rum vor Ort", c:false},
+      {t:"08.08.: Bestellungen bei Max einsammeln", n:"Brillen & Co., falls nach Bremen geliefert — VOR Sonntag früh checken", c:false, crit:true},
+      {t:"09.08.: S1 zum Hamburger Flughafen — VORDERE Zughälfte!", n:"Zug wird in Ohlsdorf geteilt. 11:30 am Airport (Bag-Drop)", c:false}
+    ],
+    stage_andalus: [
+      {t:"09.08. abends: Wasser + Frühstück einkaufen", n:"Sonntag = Mercadona zu; kleiner Alimentación oder Flughafen-Express-Markt", c:false},
+      {t:"Bargeld abheben: 150–200 €", n:"Bank-ATM (Unicaja/Santander), Euronet meiden. Für Chiringuitos, Foodtrucks, La Paloma", c:false},
+      {t:"10.08. abends: früh schlafen", n:"05:45-Wecker am 11., 05:50 am 12. — zwei harte Morgen in Folge", c:false},
+      {t:"11.08.: Ausweise + Tagesrucksack ≤40×40 für Granada", n:"QRs im Reiseplan Tag 11. Busbahnhof→Alhambra: C30/C32 oder Taxi, NICHT laufen", c:false}
+    ],
+    stage_eclipse: [
+      {t:"Im AVE (07:00–09:44): AEMET-Wolkenprognose → Spot entscheiden", n:"Klar → Almazán · Wolken West → Épila · Romantik → Medinaceli. Entscheidung bis Abfahrt Medinaceli offen", c:false, crit:true},
+      {t:"Nach Mietwagen-Übernahme: Kennzeichen registrieren (falls Épila)", n:"Mail-Link Entrada #1860 — ohne Matrícula kommt das Auto nicht rein!", c:false, crit:true},
+      {t:"Großeinkauf Madrid: Wasser 10+ L, kaltes Essen, Eis", n:"PLUS: Sonnenschirm/Tarp + 2 Faltstühle (~25 €, Decathlon/Carrefour) — null Schatten am Spot 16–19:30!", c:false, crit:true},
+      {t:"Volltanken vor der A-2", c:false},
+      {t:"~16–17 Uhr am Spot: Westhorizont ablaufen", n:"Sonne bei Totalität nur ~9–11° hoch, Azimut ~281° (WNW)", c:false},
+      {t:"QR sichtbar hinter die Windschutzscheibe (Épila)", c:false},
+      {t:"Handy-Kamera: Brille vor die Linse in partieller Phase", n:"Sensor-Schaden möglich. Während der ~100 s Totalität: alles erlaubt, Brille ab!", c:false},
+      {t:"Plan B präsent haben: Stau um 19:30", n:"Totalität passiert überall im Band — nächster LEGALER Parkplatz mit W-Blick, nicht Seitenstreifen", c:false},
+      {t:"14.08.: bis ~15 Uhr in Madrid sein!", n:"Operación Salida (Feiertagsfreitag) + Eclipse-Rückreise = Jahres-Spitzenverkehr. El Escorial nur mit Frühstart", c:false, crit:true},
+      {t:"14.08.: Tanken vor Rückgabe + Rundum-Fotos vom Auto", n:"Tankbeleg aufheben, km-Stand fotografieren", c:false, crit:true},
+      {t:"ZBE Madrid: NICHT zur Unterkunft fahren!", n:"Cabeza 11 liegt im gesperrten Distrito Centro (~200 € Bußgeld). Nur direkt ins Parkhaus (Parclick) oder außerhalb parken", c:false, crit:true}
+    ],
+    stage_madrid: [
+      {t:"15.08.: Prado-/Reina-Sofía-Ticket online (falls regulär statt Gratisfenster)", n:"Feiertag = voll. Zeitfenster 15–18 Uhr buchen", c:false},
+      {t:"15.08. abends: PACKEN vor La Paloma-Finale", n:"Regel: lieber Fest kürzen als unpackt ins Bett — 03:15 klingelt der Wecker", c:false, crit:true},
+      {t:"Taxi/Cabify für 16.08. 03:45 vorbestellen", n:"Tarifa 4 fix 33 € (+ ggf. 5 € Vorbestellung). Radio Taxi: 915 478 200", c:false, crit:true},
+      {t:"16.08. BER: Gepäckaufbewahrung checken", n:"Schließfächer begrenzt — Plan B: Schließfächer Berlin Hbf nach FEX-Fahrt", c:false}
     ],
     pack_docs: [
       {t:"Perso/Reisepass (auch für Alhambra nötig)", c:false},
@@ -1381,7 +1425,7 @@ function renderList(groupEl){
 }
 function updateCounts(){
   const sum = keys => keys.reduce((a,k)=>{const l=state.lists[k];a[0]+=l.filter(x=>x.c).length;a[1]+=l.length;return a;},[0,0]);
-  const t = sum(["todo_now","todo_trip"]);
+  const t = sum(["stage_pre","stage_bremen","stage_andalus","stage_eclipse","stage_madrid"]);
   const p = sum(["pack_docs","pack_eclipse","pack_camp","pack_clothes","pack_pharm"]);
   const s = sum(["shop_order","shop_clothes","pack_local"]);
   $("#cnt-todos").textContent = t[0]+"/"+t[1];
