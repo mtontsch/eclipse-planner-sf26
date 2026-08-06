@@ -1,0 +1,23 @@
+{
+  "name": "Spanien Eclipse Trip 2026",
+  "short_name": "Eclipse",
+  "description": "Living Planning Document \u2014 SoFi 12.08.2026",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#15163a",
+  "theme_color": "#15163a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
