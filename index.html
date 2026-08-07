@@ -853,22 +853,39 @@ footer button{border:none;background:none;color:var(--ink-soft);font-family:var(
     <button class="tab" role="tab" data-tab="days" aria-selected="false">Reiseplan 🚆</button>
     <button class="tab" role="tab" data-tab="malaga" aria-selected="false">Málaga 🏖</button>
     <button class="tab" role="tab" data-tab="madrid" aria-selected="false">Madrid 🏛</button>
-    <button class="tab" role="tab" data-tab="map" aria-selected="false">Karte 🗺</button>
-    <button class="tab" role="tab" data-tab="wx" aria-selected="false">Wetter ☁</button>
-    <button class="tab" role="tab" data-tab="info" aria-selected="false">Lage &amp; Links</button>
+    <button class="tab" role="tab" data-tab="trip" aria-selected="false">Roadtrip 🚗</button>
+
   </nav>
   <div class="status-line" id="status">Lade gespeicherten Stand …</div>
 
   <!-- ============ TO-DOS ============ -->
   <section id="tab-todos" role="tabpanel">
-    <div class="group" data-list="todo_now">
-      <div class="group-head"><h3>🚨 Vor Abflug (kritisch)</h3></div>
+    <div class="group" data-list="stage_pre">
+      <div class="group-head"><h3>🏁 HEUTE — vor Abfahrt (Mi 06.08., München)</h3></div>
       <div class="bar"><i></i></div>
       <ul class="check"></ul>
       <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
     </div>
-    <div class="group" data-list="todo_trip">
-      <div class="group-head"><h3>📍 Unterwegs erledigen</h3></div>
+    <div class="group" data-list="stage_bremen">
+      <div class="group-head"><h3>🌾 Bremen &amp; Anreise (Fr 07. – So 09.08.)</h3></div>
+      <div class="bar"><i></i></div>
+      <ul class="check"></ul>
+      <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
+    </div>
+    <div class="group" data-list="stage_andalus">
+      <div class="group-head"><h3>🏖 Málaga &amp; Granada (So 09. – Mi 12.08.)</h3></div>
+      <div class="bar"><i></i></div>
+      <ul class="check"></ul>
+      <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
+    </div>
+    <div class="group" data-list="stage_eclipse">
+      <div class="group-head"><h3>🌑 Eclipse &amp; Auto (Mi 12. – Fr 14.08.)</h3></div>
+      <div class="bar"><i></i></div>
+      <ul class="check"></ul>
+      <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
+    </div>
+    <div class="group" data-list="stage_madrid">
+      <div class="group-head"><h3>🏛 Madrid &amp; Heimreise (Fr 14. – So 16.08.)</h3></div>
       <div class="bar"><i></i></div>
       <ul class="check"></ul>
       <div class="adder"><input type="text" placeholder="Neues To-do …"><button>+</button></div>
@@ -1041,40 +1058,46 @@ Zugang: 10.–14.08., freies Rein & Raus — QR wird nur beim ERSTEN Zugang gesc
   <!-- ============ MADRID ============ -->
   <section id="tab-madrid" role="tabpanel" hidden>
     <p style="font-size:.85rem;color:var(--ink-soft);margin-bottom:.6rem">Basis: <b>Calle de la Cabeza 11</b> (🏠) — Atocha 12 min, alles unten fußläufig.</p>
-    <div class="fixed-block" style="margin-top:0">EMPFOHLENER ABLAUF Sa 15.08. — Feiertag + La Paloma! (Hitzepeak 16–19 Uhr, Sonnenuntergang ~21:20)
-09:00  ① Retiro + Ruderboot — einzige kühle Stunden, Park noch leer
-11:00  ⑤ Palacio Real außen + ④ Plaza Mayor — bevor die Touristenmassen kommen
-13:30  Mittag + SIESTA (Feiertag: viele Läden zu, Bars offen)
-       (15–18 Uhr: ② Prado ODER ③ Reina Sofía mit Klimaanlage — Ticket vorher online!
-        Sparfüchse: Prado-Gratisfenster 18–20 Uhr, dann aber 17:15 anstellen)
-18:30  ⑥ La Latina: Cava-Baja-Tapas, dann Fiesta de La Paloma — heute ist DER Festtag
-20:45  ⑦ Templo de Debod ODER ⑧ Rooftop CBA zum Sonnenuntergang (~21:20)
-22:30  ⑨ Gran Vía zurückschlendern · DANN PACKEN — 03:15 klingelt der Wecker!
-Regel für morgen: lieber La Paloma kürzen als unpackt ins Bett.</div>
+    <div class="fixed-block" style="margin-top:0">MADRID AUF DREI ABENDE VERTEILT (Hitzepeak 16–19 Uhr, Sonnenuntergang ~21:20)
+
+DO 13.08. ABENDS — optional, falls ihr NICHT 2. Nacht in Épila bleibt:
+~19:30  Ankunft, Auto ins Parkhaus (ZBE! Parclick vorbuchen) — NICHT vor die Tür
+20:45   ⑦ Templo de Debod zum Sonnenuntergang (entspannter Einstieg)
+22:00   Abendessen Lavapiés um die Ecke, früh ins Bett — der Tag war lang
+
+FR 14.08. — tagsüber Roadtrip-Rückweg (siehe Roadtrip-Tab), 17:30 Rückgabe:
+18:30   ⑥ Cava Baja Tapas-Crawl — La Paloma STARTET heute schon!
+20:30   ⑧ Rooftop Círculo de Bellas Artes: Sonnenuntergang über der Gran Vía
+22:00   ⑨ Gran Vía-Bummel zurück, Churros bei San Ginés
+
+SA 15.08. — der volle Tag (Feiertag!):
+09:00   ① Retiro + Ruderboot — einzige kühle Stunden
+11:00   ⑤ Palacio Real außen + ④ Plaza Mayor — vor den Massen
+13:30   Mittag + SIESTA (Feiertag: Läden zu, Bars offen)
+15–18   ② Prado ODER ③ Reina Sofía (Klimaanlage; Ticket online!
+        Sparfüchse: Prado gratis 18–20, dann 17:15 anstellen)
+18:30   ⑥ La Paloma-HAUPTTAG in La Latina
+21:00   Sonnenuntergang: was vom 13./14. übrig blieb (⑦ oder ⑧)
+22:30   PACKEN — Wecker 03:15. Lieber Fest kürzen als unpackt ins Bett.</div>
     <div id="map-mad" class="citymap"></div>
     <div class="linkrow"><a id="gmaps-mad" href="#" target="_blank" rel="noopener">🗺 Tour in Google Maps öffnen (zu Fuß)</a></div>
     <div id="acts-mad"></div>
   </section>
 
-  <!-- ============ KARTE ============ -->
-  <section id="tab-map" role="tabpanel" hidden>
+  <!-- ============ ROADTRIP ============ -->
+  <section id="tab-trip" role="tabpanel" hidden>
     <p style="font-size:.85rem;color:var(--ink-soft);margin-bottom:.6rem">
-      Umbra-Band aus Espenaks offiziellen Pfadkoordinaten (PCHIP-interpoliert aus dem 120-s-Raster), Basemap als eingebettete Vektordaten (Provinzgrenzen) — funktioniert komplett offline. Marker anklicken für die Einschätzung. Für Horizont-/Geländeschatten am konkreten Spot: <a href="https://visualizadores.ign.es/eclipses/2026" target="_blank" rel="noopener">IGN-Viewer</a> oder <a href="https://www.trioeclipses.es" target="_blank" rel="noopener">trioeclipses.es</a>.
+      Alles für Mi 12. – Fr 14.08.: Stationen entlang der A-2, Eclipse-Spots, Erkundungs-Optionen für den 13. rund um euren Schlafplatz, Rückweg-Stopps. Chips zeigen, an welchem Tag ein Stopp passt. Wetter unten — am 12. morgens im AVE checken!
     </p>
-    <div class="legend">
-      <span class="lg-green">Eclipse + legal schlafen</span>
-      <span class="lg-blue">Nur Tages-Beobachtung</span>
-      <span class="lg-orange">Fallback (gebucht)</span>
-      <span class="lg-red">Meiden / Start</span>
+    <div id="map-trip" class="citymap" style="height:400px"></div>
+    <div class="linkrow">
+      <a id="gmaps-trip-a" href="#" target="_blank" rel="noopener">🗺 Route Soria-Korridor (Madrid→Almazán)</a>
+      <a id="gmaps-trip-b" href="#" target="_blank" rel="noopener">🗺 Route Épila-Variante (Madrid→POGA)</a>
     </div>
-    <div id="eclipse-map" aria-label="Karte der Totalitätszone mit Spot-Kandidaten"></div>
-    <p style="font-family:var(--mono);font-size:.7rem;color:var(--ink-soft);margin-top:.5rem">
-      Zentrallinie gestrichelt — je näher dran, desto länger die Totalität. Eclipse Predictions by Fred Espenak, EclipseWise.com · Grenzen ±wenige km (120-s-Tabellenraster).
-    </p>
-  </section>
+    <div id="acts-trip"></div>
 
-  <!-- ============ WETTER ============ -->
-  <section id="tab-wx" role="tabpanel" hidden>
+    <h2>Wetter für die Spot-Entscheidung <span class="tag">Open-Meteo · Wolkenschichten</span></h2>
+
     <div class="warnbox" style="margin-top:0">
       ☀️ <b>Warum der Himmel ÜBER euch egal ist:</b> Bei der Totalität steht die Sonne nur <b>~9–11° hoch im WNW (Azimut ~281°)</b>. Entscheidend ist die Bewölkung entlang dieser flachen Sichtlinie zum Horizont — tiefe und mittelhohe Wolken im WNW sind der Killer, hohe Schleierwolken (Cirrus) dämpfen nur. Deshalb unten die Wolkenschichten getrennt.
     </div>
@@ -1092,10 +1115,8 @@ Regel für morgen: lieber La Paloma kürzen als unpackt ins Bett.</div>
       <a href="https://www.windy.com/-Clouds-clouds?clouds,41.5,-2.5,7" target="_blank" rel="noopener">Windy Wolken (ECMWF)</a>
       <a href="https://visualizadores.ign.es/eclipses/2026" target="_blank" rel="noopener">IGN-Viewer (inkl. AEMET-Daten)</a>
     </div>
-  </section>
+  
 
-  <!-- ============ INFO ============ -->
-  <section id="tab-info" role="tabpanel" hidden>
     <h2>Eclipse-Fakten <span class="tag">Stand 03.08.</span></h2>
     <div class="group">
       <ul style="list-style:none;font-size:.9rem;display:grid;gap:.45rem">
@@ -1122,14 +1143,6 @@ Regel für morgen: lieber La Paloma kürzen als unpackt ins Bett.</div>
         <li>Hochebene Soria (~1000 m) nachts: 14–17 °C — Fleece!</li>
       </ul>
     </div>
-    <h2>Unterkünfte & Stadt-Transport</h2>
-    <div class="group">
-      <ul style="list-style:none;font-size:.88rem;display:grid;gap:.5rem">
-        <li>🏠 <b>Málaga:</b> Calle San José 3, 29015 (Centro) — <a href="https://maps.google.com/?q=Calle+San+Jos%C3%A9+3+29015+M%C3%A1laga" target="_blank" rel="noopener">Maps</a>. Alles zu Fuß; Pedregalejo: Bus 3/11 ab Paseo del Parque (1,40 €); Flughafen: Cercanías C-1.</li>
-        <li>🏠 <b>Madrid:</b> Calle de la Cabeza 11, 28012 (Lavapiés) — <a href="https://maps.google.com/?q=Calle+de+la+Cabeza+11+28012+Madrid" target="_blank" rel="noopener">Maps</a>. Atocha 10–12 min zu Fuß! Metro Antón Martín (L1) 2 min; Tarjeta Multi teilbar.</li>
-        <li>🚕 Madrid↔Flughafen: Taxi Tarifa 4 <b>fix 33 €</b> (24 h, innerhalb M-30, keine Zuschläge).</li>
-      </ul>
-    </div>
     <h2>Nützliche Links</h2>
     <div class="linkrow">
       <a href="https://www.aemet.es/es/eltiempo/prediccion/municipios/soria-id42173" target="_blank" rel="noopener">AEMET Soria</a>
@@ -1142,7 +1155,14 @@ Regel für morgen: lieber La Paloma kürzen als unpackt ins Bett.</div>
       <a href="https://maps.google.com/?q=41.5588,-1.1989" target="_blank" rel="noopener">🎯 Routenziel POGA Épila</a>
       <a href="https://www.aemet.es/es/eltiempo/prediccion/municipios/epila-id50099" target="_blank" rel="noopener">AEMET Épila</a>
     </div>
+  
   </section>
+
+
+
+
+
+
 </main>
 
 <footer>
@@ -1167,23 +1187,49 @@ Regel für morgen: lieber La Paloma kürzen als unpackt ins Bett.</div>
 /* ================= data model ================= */
 const DEFAULTS = {
   lists: {
-    todo_now: [
-      {t:"SoFi-Brillen bestellen (3×, EN ISO 12312-2) — HEUTE", n:"Prime bis Do 7.8. nach München/Bremen; Fallback Optiker Madrid", c:false, crit:true},
-      {t:"Alhambra-Tickets 11.08. checken/buchen — HEUTE", n:"1) offiziell 2) GetYourGuide/Viator-Tour 3) Plan C: nur Alcazaba+Generalife. 'Nasridenpaläste' muss im Titel stehen!", c:false, crit:true},
-      {t:"Campingplatz Raum Sigüenza/Soria für 12.08. reservieren", n:"Wildcampen verboten (Brandlage). Notfalls anrufen.", c:false, crit:true},
-      {t:"Unterkunft Madrid 13./14.–16.08. klären", c:false, crit:true},
-      {t:"Bremen→Hamburg-Zug für So 09.08. buchen", n:"Ankunft spätestens ~10:30 (Flug 13:25, Sonntags-Bahn = Risiko)", c:false, crit:true},
-      {t:"Mietwagen-Buchung prüfen: beide als Fahrer? Kreditkarte für Kaution?", c:false},
-      {t:"Offline-Karten laden (Andalusien + Kastilien) & Buchungen offline speichern", c:false},
-      {t:"Mitbringsel für Max besorgen", n:"Idee: Bremer Kluten / Kaffeebrot / Rum", c:false}
+    stage_pre: [
+      {t:"✅ Alhambra-Tickets 11.08.", n:"GEBUCHT — QRs im Reiseplan, Tag 11", c:true},
+      {t:"✅ Übernachtung Eclipse-Nacht", n:"POGA Épila gebucht (ECL26-1814) — Fallback/Basis, Spot-Entscheidung bleibt offen", c:true},
+      {t:"✅ Unterkunft Madrid", n:"Calle de la Cabeza 11 — gebucht", c:true},
+      {t:"SoFi-Brillen: nach BREMEN (Max) bestellen — JETZT", n:"München klappt nicht mehr (Abfahrt morgen 11:12!). Fallback: Optiker/Apotheke in Spanien, Ausverkaufsrisiko", c:false, crit:true},
+      {t:"Decathlon Sun-Hoody: HEUTE Click&Collect München", n:"Angelshirt Anti-UV 500 Kapuze, LSF 50+, hell — ~25 €", c:false, crit:true},
+      {t:"Bremen→Hamburg-Zug So 09.08. buchen", n:"Ankunft Hbf ≤ 10:15! Sonntags-Bahn = Baustellenrisiko", c:false, crit:true},
+      {t:"Kreditkarten-Limit für Mietwagen-Kaution checken", n:"1.000–1.500 € Block, echte Kreditkarte (keine Debit) auf Hauptfahrer. Zweiter Fahrer eingetragen?", c:false, crit:true},
+      {t:"Frühe Check-outs mit Hosts klären", n:"Málaga 12.08. ~06:15, Madrid 16.08. ~03:45 — Schlüsselbox/Self-Checkout?", c:false, crit:true},
+      {t:"Madrid-Host informieren: Anreise evtl. erst 14.08.", n:"Falls Nacht 13.→14. gebucht ist und ihr 2. Nacht Épila bleibt — sonst No-Show = Stornorisiko der Restbuchung!", c:false, crit:true},
+      {t:"Airline-Check-in 09.08. vorbereiten", n:"Falls Ryanair/easyJet: Online-Check-in + Boardingpass aufs Handy, sonst Schaltergebühr", c:false},
+      {t:"Offline-Karten laden + Buchungen offline speichern", n:"Google Maps: Andalusien + Kastilien + Aragón. PWA auf beide Handys ✓?", c:false},
+      {t:"PACKEN — Packliste-Tab durchgehen", n:"Heute Abend. Taschenmesser ins Aufgabegepäck!", c:false, crit:true}
     ],
-    todo_trip: [
-      {t:"12.08. morgens: AEMET-Wolkenprognose checken → Zielort final festlegen", n:"Bei Wolken im NO weiter Richtung Soria/Zaragoza", c:false, crit:true},
-      {t:"12.08.: Mercadona/Lidl-Großeinkauf in Madrid (Wasser, kaltes Essen, Eis für Kühltasche)", c:false},
-      {t:"12.08.: Volltanken vor Abfahrt aus Madrid", c:false},
-      {t:"12.08. ~17 Uhr: Westhorizont am Spot real verifizieren", c:false},
-      {t:"14.08.: Tanken vor Mietwagen-Rückgabe 17:30", c:false},
-      {t:"15.08. abends: Nachtbus/Taxi für 16.08. ~03:45 klären (Airport Express 203, 24/7)", c:false}
+    stage_bremen: [
+      {t:"Mitbringsel für Max", n:"Falls nicht bestellt: Kluten / Kaffeebrot / Bremer Rum vor Ort", c:false},
+      {t:"08.08.: Bestellungen bei Max einsammeln", n:"Brillen & Co., falls nach Bremen geliefert — VOR Sonntag früh checken", c:false, crit:true},
+      {t:"09.08.: S1 zum Hamburger Flughafen — VORDERE Zughälfte!", n:"Zug wird in Ohlsdorf geteilt. 11:30 am Airport (Bag-Drop)", c:false}
+    ],
+    stage_andalus: [
+      {t:"09.08. abends: Wasser + Frühstück einkaufen", n:"Sonntag = Mercadona zu; kleiner Alimentación oder Flughafen-Express-Markt", c:false},
+      {t:"Bargeld abheben: 150–200 €", n:"Bank-ATM (Unicaja/Santander), Euronet meiden. Für Chiringuitos, Foodtrucks, La Paloma", c:false},
+      {t:"10.08. abends: früh schlafen", n:"05:45-Wecker am 11., 05:50 am 12. — zwei harte Morgen in Folge", c:false},
+      {t:"11.08.: Ausweise + Tagesrucksack ≤40×40 für Granada", n:"QRs im Reiseplan Tag 11. Busbahnhof→Alhambra: C30/C32 oder Taxi, NICHT laufen", c:false}
+    ],
+    stage_eclipse: [
+      {t:"Im AVE (07:00–09:44): AEMET-Wolkenprognose checken", n:"Basis ist ÉPILA (Pkw+Zelt nur dort legal!). Bei klarem Himmel optional Guck-Stopp Almazán/Medinaceli auf NORMALEM Parkplatz — Autocaravanas-Áreas sind für Pkw verboten", c:false, crit:true},
+      {t:"Nach Mietwagen-Übernahme: Kennzeichen registrieren (falls Épila)", n:"Mail-Link Entrada #1860 — ohne Matrícula kommt das Auto nicht rein!", c:false, crit:true},
+      {t:"Großeinkauf Madrid: Wasser 10+ L, kaltes Essen, Eis", n:"PLUS: Sonnenschirm/Tarp + 2 Faltstühle (~25 €, Decathlon/Carrefour) — null Schatten am Spot 16–19:30!", c:false, crit:true},
+      {t:"Volltanken vor der A-2", c:false},
+      {t:"~16–17 Uhr am Spot: Westhorizont ablaufen", n:"Sonne bei Totalität nur ~9–11° hoch, Azimut ~281° (WNW)", c:false},
+      {t:"QR sichtbar hinter die Windschutzscheibe (Épila)", c:false},
+      {t:"Handy-Kamera: Brille vor die Linse in partieller Phase", n:"Sensor-Schaden möglich. Während der ~100 s Totalität: alles erlaubt, Brille ab!", c:false},
+      {t:"Plan B präsent haben: Stau um 19:30", n:"Totalität passiert überall im Band — nächster LEGALER Parkplatz mit W-Blick, nicht Seitenstreifen", c:false},
+      {t:"14.08.: bis ~15 Uhr in Madrid sein!", n:"Operación Salida (Feiertagsfreitag) + Eclipse-Rückreise = Jahres-Spitzenverkehr. El Escorial nur mit Frühstart", c:false, crit:true},
+      {t:"14.08.: Tanken vor Rückgabe + Rundum-Fotos vom Auto", n:"Tankbeleg aufheben, km-Stand fotografieren", c:false, crit:true},
+      {t:"ZBE Madrid: NICHT zur Unterkunft fahren!", n:"Cabeza 11 liegt im gesperrten Distrito Centro (~200 € Bußgeld). Nur direkt ins Parkhaus (Parclick) oder außerhalb parken", c:false, crit:true}
+    ],
+    stage_madrid: [
+      {t:"15.08.: Prado-/Reina-Sofía-Ticket online (falls regulär statt Gratisfenster)", n:"Feiertag = voll. Zeitfenster 15–18 Uhr buchen", c:false},
+      {t:"15.08. abends: PACKEN vor La Paloma-Finale", n:"Regel: lieber Fest kürzen als unpackt ins Bett — 03:15 klingelt der Wecker", c:false, crit:true},
+      {t:"Taxi/Cabify für 16.08. 03:45 vorbestellen", n:"Tarifa 4 fix 33 € (+ ggf. 5 € Vorbestellung). Radio Taxi: 915 478 200", c:false, crit:true},
+      {t:"16.08. BER: Gepäckaufbewahrung checken", n:"Schließfächer begrenzt — Plan B: Schließfächer Berlin Hbf nach FEX-Fahrt", c:false}
     ],
     pack_docs: [
       {t:"Perso/Reisepass (auch für Alhambra nötig)", c:false},
@@ -1286,9 +1332,9 @@ const DAYS = [
     {id:"o11c", name:"Kathedrale + Capilla Real", factor:"Nur wenn Energie übrig. 16 h Granada sind lang — die Siesta ist wichtiger als ein drittes Monument."}
   ], note:true},
  {id:"d12", date:"Mi 12.08.", title:"🌑 DER TAG · AVE + Auto + Totalität", wx:"~35 °C · AEMET checken!",
-  fixed:"⏰ 05:50 aufstehen · 06:20 Taxi (~8 €) zum Bahnhof María Zambrano\n🚄 AVE 02073 · Málaga 07:00 → Madrid-Atocha 09:44 · Ticket in der Renfe-App/Mail — Gepäckscanner am Gleis, 20 min Puffer\n📲 Im Zug: AEMET-Wolkenprognose checken → Spot-Entscheidung (Logik unten)\n🚗 10:00 Mietwagen (Station ~Atocha, Maps-Link im Info-Tab) · Kennzeichen notieren!\n🎫 Falls Épila: SOFORT Matrícula per Mail-Link registrieren (Entrada #1860)\n🛒 Supermarkt: Wasser 10+ L, kaltes Essen, Eis — nirgends Versorgung\n🚗 Spätestens 12:30 auf die A-2 — Entscheidung bis Abfahrt Medinaceli (km 150) offen!\n☀️ Klar → ALMAZÁN · 🌤 Wolken West → ÉPILA (Ticket ↓) · 🏛 Romantik → MEDINACELI\n📍 Bis ~16 Uhr am Ziel: Westhorizont ablaufen (Sonne steht bei Totalität nur ~9–11° hoch, Az ~281°!)\n🌑 Partiell ab 19:34 · TOTALITÄT ~20:29–20:31 · Ende 21:09–21:22 je nach Ort\n⭐ Danach Perseiden · Hotline POGA: 976 715 001",
+  fixed:"⏰ 05:50 aufstehen · 06:20 Taxi (~8 €) zum Bahnhof María Zambrano\n🚄 AVE 02073 · Málaga 07:00 → Madrid-Atocha 09:44 · Ticket in der Renfe-App/Mail — Gepäckscanner am Gleis, 20 min Puffer\n📲 Im Zug: AEMET-Wolkenprognose checken → Spot-Entscheidung (Logik unten)\n🚗 10:00 Mietwagen (Station ~Atocha, Maps-Link im Info-Tab) · Kennzeichen notieren!\n🎫 Falls Épila: SOFORT Matrícula per Mail-Link registrieren (Entrada #1860)\n🛒 Supermarkt: Wasser 10+ L, kaltes Essen, Eis — nirgends Versorgung\n🚗 Spätestens 12:30 auf die A-2 — Entscheidung bis Abfahrt Medinaceli (km 150) offen!\n🎫 BASIS = ÉPILA — einzige Option, wo Pkw+Zelt explizit erlaubt ist ('VehiculoConTienda' ✓)\n☀️ Optional bei klarem Himmel: Guck-Stopp Almazán/Medinaceli auf NORMALEM Parkplatz (Autocaravanas-Áreas = Pkw VERBOTEN!), danach ~1 h nach Épila im Rückreiseverkehr\n🌤 Im Zweifel: direkt Épila, 15:30 da, entspannt aufbauen\n📍 Bis ~16 Uhr am Ziel: Westhorizont ablaufen (Sonne steht bei Totalität nur ~9–11° hoch, Az ~281°!)\n🌑 Partiell ab 19:34 · TOTALITÄT ~20:29–20:31 · Ende 21:09–21:22 je nach Ort\n⭐ Danach Perseiden · Hotline POGA: 976 715 001",
   opts:[
-    {id:"o12f", name:"⭐ ALMAZÁN — Eclipse + Schlafen an einem Ort", factor:"Área Arboleda: gratis, 72 h, WC-Entsorgung. ~1:40 Totalität, Perseiden-Programm. Keine Fahrt nach der Eclipse. ~2:15 h ab Madrid."},
+    {id:"o12f", name:"⚠️ Almazán/Medinaceli: Áreas für Pkw VERBOTEN", factor:"Offizieller Aushang Almazán: nur Autocaravanas/homologierte Fahrzeuge, Sanktionen, keine Reservierung, ab 10./11. voll. Als Eclipse-GUCKPUNKT mit normalem Parkplatz ok (~1:40) — danach 1 h Nachtfahrt nach Épila. Ehrliche Empfehlung: direkt Épila."},
     {id:"o12a", name:"MEDINACELI — Plateau-Romantik", factor:"Área am Ortsrand (48 h), 1200-m-Panorama, Römerbogen. ~1:30 Totalität, kürzeste Fahrt (~1:45 h)."},
     {id:"o12c", name:"Offizielle Punkte Garray/Borobia/Ágreda", factor:"Nur TAGESplätze — danach Fahrt zum Schlaf-Área im Eclipse-Verkehr. Valonsadero: streichen."},
     {id:"o12e", name:"🎫 FALLBACK: POGA Épila (gebucht)", factor:"Zieht bei Wolkenrisiko im Westen. Zugang 10.–14.08. frei rein/raus, Backup-Screen, 92 s. QR ↓ die ganze Standzeit sichtbar ins Auto!"}
@@ -1381,7 +1427,7 @@ function renderList(groupEl){
 }
 function updateCounts(){
   const sum = keys => keys.reduce((a,k)=>{const l=state.lists[k];a[0]+=l.filter(x=>x.c).length;a[1]+=l.length;return a;},[0,0]);
-  const t = sum(["todo_now","todo_trip"]);
+  const t = sum(["stage_pre","stage_bremen","stage_andalus","stage_eclipse","stage_madrid"]);
   const p = sum(["pack_docs","pack_eclipse","pack_camp","pack_clothes","pack_pharm"]);
   const s = sum(["shop_order","shop_clothes","pack_local"]);
   $("#cnt-todos").textContent = t[0]+"/"+t[1];
@@ -1493,58 +1539,6 @@ load();
 //# sourceMappingURL=leaflet.js.map
 </script>
 <script>
-/* ===== Eingebettete Vektordaten ===== */
-const SPAIN_GEO = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[3.21,39.96],[3.14,39.93],[3.13,39.93],[3.11,39.9],[3.08,39.9],[3.11,39.86],[3.19,39.89],[3.2,39.89],[3.14,39.78],[3.48,39.72],[3.46,39.71],[3.44,39.63],[3.4,39.63],[3.4,39.58],[3.29,39.49],[3.23,39.36],[3.07,39.27],[3.05,39.27],[3.01,39.31],[2.99,39.32],[2.99,39.34],[2.96,39.36],[2.91,39.35],[2.79,39.36],[2.75,39.51],[2.67,39.56],[2.54,39.52],[2.52,39.46],[2.46,39.53],[2.42,39.52],[2.41,39.54],[2.39,39.52],[2.39,39.55],[2.35,39.56],[2.36,39.61],[2.46,39.65],[2.53,39.7],[2.59,39.72],[2.62,39.76],[2.66,39.77],[2.67,39.79],[2.69,39.79],[2.78,39.86],[2.85,39.86],[2.95,39.92],[2.98,39.91],[3.03,39.94],[3.06,39.92],[3.12,39.93],[3.17,39.96],[3.21,39.96]]],[[[4.09,40.06],[4.1,40.04],[4.13,40.06],[4.13,40.03],[4.14,40.04],[4.14,40.07],[4.16,40.07],[4.17,40.06],[4.16,40.03],[4.2,40.03],[4.19,40.01],[4.21,39.99],[4.27,40.0],[4.25,39.96],[4.31,39.88],[4.33,39.88],[4.31,39.87],[4.31,39.88],[4.3,39.89],[4.26,39.9],[4.29,39.82],[3.82,39.93],[3.84,40.0],[3.79,40.02],[3.82,40.05],[3.9,40.06],[3.92,40.05],[3.93,40.06],[3.98,40.05],[4.02,40.06],[4.03,40.07],[4.04,40.06],[4.05,40.05],[4.09,40.07],[4.08,40.09],[4.09,40.09],[4.09,40.06]]],[[[1.53,39.12],[1.6,39.09],[1.6,39.08],[1.61,39.08],[1.59,39.06],[1.62,39.03],[1.53,38.98],[1.53,38.94],[1.51,38.95],[1.48,38.91],[1.46,38.92],[1.46,38.9],[1.42,38.9],[1.4,38.87],[1.41,38.83],[1.37,38.83],[1.34,38.87],[1.32,38.86],[1.31,38.87],[1.3,38.86],[1.3,38.88],[1.27,38.88],[1.26,38.86],[1.25,38.86],[1.22,38.87],[1.21,38.9],[1.24,38.94],[1.21,38.96],[1.23,38.97],[1.31,38.97],[1.29,39.03],[1.36,39.07],[1.37,39.06],[1.38,39.06],[1.43,39.09],[1.44,39.08],[1.46,39.1],[1.49,39.11],[1.49,39.1],[1.5,39.1],[1.53,39.12]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-5.83,43.64],[-5.76,43.58],[-5.71,43.57],[-5.68,43.57],[-5.68,43.54],[-5.62,43.56],[-5.41,43.55],[-5.22,43.47],[-5.12,43.48],[-5.04,43.46],[-4.98,43.45],[-4.93,43.46],[-4.7,43.4],[-4.68,43.41],[-4.57,43.39],[-4.52,43.4],[-4.52,43.28],[-4.73,43.26],[-4.75,43.18],[-4.91,43.24],[-5.1,43.1],[-5.49,43.02],[-5.69,43.06],[-5.8,42.96],[-5.98,43.07],[-6.23,43.01],[-6.36,43.06],[-6.48,42.99],[-6.43,42.94],[-6.77,42.88],[-7.0,43.02],[-6.84,43.17],[-6.96,43.14],[-7.18,43.39],[-7.02,43.56],[-7.01,43.56],[-7.0,43.56],[-7.0,43.55],[-6.97,43.56],[-6.93,43.57],[-6.91,43.57],[-6.88,43.56],[-6.83,43.57],[-6.81,43.55],[-6.78,43.56],[-6.77,43.57],[-6.72,43.56],[-6.71,43.56],[-6.68,43.56],[-6.63,43.57],[-6.6,43.55],[-6.53,43.55],[-6.47,43.55],[-6.47,43.57],[-6.45,43.56],[-6.44,43.56],[-6.43,43.55],[-6.36,43.55],[-6.3,43.56],[-6.3,43.57],[-6.29,43.57],[-6.27,43.58],[-6.26,43.58],[-6.24,43.6],[-6.19,43.56],[-6.15,43.57],[-6.15,43.56],[-6.11,43.56],[-6.09,43.56],[-6.08,43.56],[-6.08,43.57],[-6.08,43.56],[-6.07,43.57],[-6.02,43.59],[-6.0,43.57],[-5.96,43.58],[-5.91,43.61],[-5.91,43.62],[-5.89,43.62],[-5.87,43.63],[-5.84,43.66],[-5.83,43.64]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-7.68,43.79],[-7.74,43.51],[-7.95,43.29],[-7.94,42.9],[-8.05,42.83],[-8.34,42.84],[-8.41,42.75],[-8.79,42.64],[-8.84,42.69],[-8.84,42.63],[-8.86,42.63],[-8.86,42.61],[-8.9,42.64],[-8.94,42.61],[-8.92,42.59],[-8.99,42.57],[-9.04,42.52],[-9.03,42.55],[-9.04,42.57],[-9.09,42.58],[-9.08,42.58],[-9.08,42.6],[-9.06,42.6],[-9.04,42.64],[-9.03,42.7],[-8.99,42.74],[-8.95,42.75],[-8.92,42.79],[-8.9,42.79],[-8.88,42.83],[-9.06,42.79],[-9.09,42.74],[-9.12,42.75],[-9.13,42.79],[-9.14,42.8],[-9.15,42.8],[-9.11,42.81],[-9.11,42.84],[-9.14,42.85],[-9.15,42.87],[-9.13,42.91],[-9.17,42.94],[-9.27,42.88],[-9.3,42.92],[-9.26,43.0],[-9.3,43.05],[-9.26,43.05],[-9.25,43.07],[-9.26,43.09],[-9.22,43.09],[-9.22,43.11],[-9.17,43.11],[-9.21,43.16],[-9.2,43.15],[-9.15,43.2],[-9.09,43.18],[-9.06,43.18],[-9.01,43.23],[-9.0,43.22],[-8.98,43.23],[-8.94,43.23],[-8.95,43.26],[-8.98,43.26],[-8.99,43.27],[-8.98,43.28],[-8.96,43.29],[-8.93,43.28],[-8.91,43.29],[-8.91,43.3],[-8.91,43.31],[-8.91,43.32],[-8.88,43.31],[-8.85,43.32],[-8.84,43.35],[-8.79,43.3],[-8.75,43.29],[-8.73,43.3],[-8.71,43.29],[-8.54,43.32],[-8.51,43.33],[-8.49,43.36],[-8.41,43.37],[-8.4,43.39],[-8.36,43.34],[-8.31,43.41],[-8.21,43.33],[-8.17,43.42],[-8.26,43.42],[-8.28,43.44],[-8.32,43.45],[-8.25,43.47],[-8.2,43.46],[-8.15,43.52],[-8.34,43.46],[-8.3,43.54],[-8.32,43.57],[-8.26,43.56],[-8.19,43.6],[-8.19,43.62],[-8.16,43.62],[-8.09,43.67],[-8.05,43.65],[-8.08,43.66],[-8.08,43.68],[-8.07,43.68],[-8.07,43.7],[-8.06,43.7],[-8.0,43.71],[-7.95,43.74],[-7.92,43.74],[-7.92,43.75],[-7.9,43.77],[-7.87,43.77],[-7.87,43.74],[-7.85,43.71],[-7.88,43.72],[-7.9,43.67],[-7.85,43.67],[-7.86,43.71],[-7.81,43.7],[-7.83,43.71],[-7.81,43.73],[-7.73,43.75],[-7.68,43.79]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[1.72,42.49],[2.02,42.35],[2.26,42.44],[2.53,42.33],[2.95,42.48],[3.17,42.44],[3.16,42.43],[3.17,42.42],[3.16,42.41],[3.17,42.4],[3.15,42.39],[3.16,42.39],[3.17,42.39],[3.16,42.38],[3.16,42.36],[3.19,42.34],[3.23,42.35],[3.24,42.35],[3.25,42.33],[3.27,42.34],[3.32,42.32],[3.29,42.3],[3.29,42.29],[3.3,42.28],[3.29,42.28],[3.28,42.29],[3.26,42.24],[3.16,42.26],[3.11,42.21],[3.12,42.13],[3.18,42.11],[3.17,42.11],[3.21,42.06],[3.2,42.05],[3.2,42.01],[3.23,41.95],[3.22,41.94],[3.21,41.94],[3.22,41.93],[3.22,41.92],[3.21,41.92],[3.2,41.89],[3.18,41.89],[3.18,41.88],[3.18,41.87],[3.13,41.84],[3.1,41.84],[3.06,41.79],[3.05,41.79],[3.05,41.78],[3.04,41.78],[3.03,41.78],[3.03,41.77],[3.01,41.77],[2.98,41.76],[2.93,41.72],[2.9,41.71],[2.89,41.7],[2.85,41.7],[2.82,41.69],[2.79,41.67],[2.78,41.65],[2.78,41.74],[2.55,41.72],[2.33,41.86],[2.48,41.92],[2.43,41.97],[2.49,42.07],[2.0,42.15],[1.97,42.2],[2.06,42.18],[2.07,42.29],[1.84,42.31],[1.72,42.49]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-8.72,42.71],[-7.97,42.85],[-7.98,42.78],[-7.86,42.71],[-7.93,42.58],[-8.37,42.49],[-8.16,42.18],[-8.64,42.05],[-8.87,41.87],[-8.88,42.0],[-8.89,42.03],[-8.88,42.04],[-8.89,42.05],[-8.9,42.07],[-8.89,42.08],[-8.9,42.11],[-8.85,42.13],[-8.83,42.12],[-8.82,42.14],[-8.85,42.16],[-8.82,42.16],[-8.82,42.19],[-8.8,42.2],[-8.78,42.2],[-8.78,42.22],[-8.71,42.24],[-8.66,42.28],[-8.61,42.29],[-8.61,42.35],[-8.64,42.35],[-8.69,42.28],[-8.73,42.29],[-8.79,42.25],[-8.81,42.26],[-8.86,42.26],[-8.87,42.25],[-8.87,42.26],[-8.86,42.27],[-8.86,42.31],[-8.83,42.28],[-8.82,42.28],[-8.82,42.31],[-8.84,42.34],[-8.79,42.33],[-8.76,42.34],[-8.65,42.43],[-8.68,42.42],[-8.7,42.44],[-8.7,42.43],[-8.74,42.41],[-8.75,42.4],[-8.76,42.4],[-8.76,42.39],[-8.77,42.39],[-8.81,42.4],[-8.84,42.38],[-8.88,42.41],[-8.87,42.44],[-8.88,42.45],[-8.93,42.45],[-8.94,42.48],[-8.89,42.49],[-8.89,42.48],[-8.89,42.49],[-8.88,42.5],[-8.87,42.5],[-8.87,42.45],[-8.82,42.45],[-8.81,42.5],[-8.83,42.52],[-8.81,42.53],[-8.83,42.52],[-8.83,42.54],[-8.84,42.56],[-8.82,42.56],[-8.83,42.56],[-8.77,42.59],[-8.78,42.61],[-8.73,42.67],[-8.72,42.71]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-3.55,43.51],[-3.5,43.47],[-3.43,43.46],[-3.49,43.42],[-3.46,43.4],[-3.45,43.44],[-3.43,43.41],[-3.32,43.42],[-3.32,43.4],[-3.22,43.39],[-3.23,43.39],[-3.21,43.37],[-3.15,43.35],[-3.15,43.31],[-3.45,43.24],[-3.42,43.13],[-3.65,43.18],[-3.85,43.08],[-3.99,42.93],[-3.83,42.93],[-3.92,42.89],[-3.82,42.81],[-3.91,42.77],[-4.0,42.83],[-4.05,42.76],[-4.15,42.79],[-4.19,42.82],[-4.13,42.86],[-4.21,42.85],[-4.24,42.96],[-4.45,43.06],[-4.72,43.02],[-4.85,43.13],[-4.73,43.26],[-4.52,43.28],[-4.51,43.39],[-4.28,43.39],[-4.18,43.4],[-3.98,43.44],[-3.96,43.46],[-3.95,43.47],[-3.89,43.47],[-3.79,43.49],[-3.76,43.47],[-3.81,43.45],[-3.83,43.45],[-3.82,43.4],[-3.75,43.45],[-3.78,43.46],[-3.73,43.46],[-3.59,43.51],[-3.55,43.51]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-4.38,37.27],[-4.27,37.01],[-3.83,36.86],[-3.78,36.74],[-4.42,36.72],[-4.64,36.51],[-4.93,36.5],[-5.18,36.41],[-5.25,36.31],[-5.43,36.53],[-5.61,36.51],[-5.32,36.67],[-5.3,36.87],[-5.13,36.84],[-5.09,36.91],[-5.14,37.01],[-4.91,37.11],[-4.94,37.18],[-4.38,37.27]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-2.29,37.88],[-1.97,37.87],[-1.98,37.62],[-1.85,37.45],[-1.63,37.38],[-1.68,37.35],[-1.69,37.34],[-1.71,37.3],[-1.76,37.26],[-1.77,37.25],[-1.77,37.24],[-1.78,37.24],[-1.8,37.23],[-1.85,37.07],[-1.9,36.99],[-1.9,36.94],[-1.99,36.89],[-2.0,36.84],[-2.06,36.81],[-2.06,36.78],[-2.12,36.73],[-2.18,36.72],[-2.36,36.84],[-2.56,36.82],[-2.62,36.73],[-2.7,36.68],[-3.13,36.75],[-2.98,36.98],[-3.03,37.11],[-2.95,37.1],[-2.85,37.28],[-2.66,37.21],[-2.64,37.39],[-2.36,37.52],[-2.39,37.63],[-2.31,37.63],[-2.29,37.88]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-1.12,38.74],[-1.0,38.57],[-1.09,38.44],[-0.97,38.28],[-1.02,38.08],[-0.75,37.82],[-0.86,37.71],[-0.73,37.63],[-0.76,37.78],[-0.75,37.78],[-0.73,37.68],[-0.71,37.64],[-0.69,37.63],[-0.7,37.63],[-0.73,37.6],[-0.92,37.55],[-0.99,37.6],[-0.98,37.58],[-1.02,37.57],[-1.03,37.58],[-1.07,37.58],[-1.11,37.57],[-1.11,37.53],[-1.21,37.58],[-1.33,37.56],[-1.49,37.42],[-1.52,37.43],[-1.63,37.37],[-1.81,37.43],[-2.01,37.67],[-1.97,37.87],[-2.17,37.89],[-2.33,38.07],[-2.05,38.31],[-1.75,38.38],[-1.56,38.33],[-1.48,38.38],[-1.42,38.68],[-1.12,38.74]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-1.49,39.4],[-1.17,39.31],[-1.27,39.05],[-1.15,38.93],[-0.96,38.94],[-0.92,38.7],[-1.03,38.66],[-1.18,38.76],[-1.38,38.7],[-1.5,38.54],[-1.48,38.38],[-1.56,38.33],[-1.77,38.38],[-2.06,38.3],[-2.34,38.03],[-2.55,38.08],[-2.45,38.19],[-2.48,38.4],[-2.57,38.41],[-2.59,38.51],[-2.76,38.53],[-2.64,38.74],[-2.88,38.94],[-2.74,39.32],[-2.51,39.34],[-2.29,39.23],[-2.05,39.27],[-2.1,39.36],[-1.77,39.28],[-1.49,39.4]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-4.86,41.09],[-4.72,41.15],[-4.42,40.63],[-4.16,40.69],[-4.16,40.62],[-4.29,40.63],[-4.32,40.41],[-4.55,40.34],[-4.57,40.22],[-4.8,40.28],[-4.95,40.12],[-5.2,40.08],[-5.34,40.12],[-5.34,40.26],[-5.53,40.19],[-5.74,40.29],[-5.63,40.46],[-5.47,40.47],[-5.43,40.56],[-5.52,40.59],[-5.16,40.81],[-5.09,41.0],[-5.12,41.14],[-4.86,41.09]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-3.01,43.2],[-2.89,43.05],[-2.63,43.02],[-2.66,43.07],[-2.55,43.09],[-2.58,42.96],[-2.24,42.89],[-2.29,42.66],[-2.5,42.62],[-2.4,42.6],[-2.42,42.49],[-2.65,42.48],[-2.74,42.62],[-2.82,42.55],[-2.9,42.69],[-3.15,42.76],[-3.11,42.89],[-3.21,42.83],[-3.28,42.88],[-3.22,42.95],[-2.98,42.94],[-3.03,43.05],[-3.18,43.02],[-3.16,43.15],[-3.01,43.2]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-4.67,39.41],[-4.76,39.32],[-4.65,39.16],[-4.81,39.2],[-4.83,39.05],[-4.96,39.06],[-4.85,38.88],[-5.57,38.43],[-5.52,38.21],[-5.69,38.08],[-5.73,38.2],[-5.87,38.16],[-5.95,38.0],[-6.18,37.94],[-6.41,38.06],[-6.58,38.02],[-6.94,38.22],[-7.09,38.17],[-7.34,38.43],[-7.26,38.73],[-7.04,38.86],[-6.95,39.02],[-7.24,39.21],[-7.15,39.37],[-7.04,39.33],[-7.05,39.44],[-6.8,39.39],[-6.77,39.19],[-6.32,39.19],[-6.14,39.03],[-6.02,39.13],[-6.01,39.05],[-5.81,39.14],[-5.6,39.1],[-5.55,39.22],[-5.41,39.16],[-5.34,39.33],[-4.67,39.41]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-0.59,38.8],[0.13,38.85],[0.23,38.74],[0.18,38.72],[0.15,38.68],[0.1,38.67],[0.08,38.63],[-0.02,38.63],[-0.1,38.52],[-0.38,38.44],[-0.51,38.33],[-0.51,38.2],[-0.63,38.15],[-0.65,38.0],[-0.7,37.97],[-0.72,37.91],[-0.75,37.9],[-0.76,37.85],[-0.83,37.87],[-1.02,38.08],[-0.97,38.28],[-1.09,38.37],[-1.03,38.66],[-0.92,38.7],[-0.96,38.77],[-0.62,38.69],[-0.51,38.74],[-0.59,38.8]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-7.89,42.54],[-7.62,42.38],[-7.31,42.43],[-7.2,42.33],[-7.08,42.51],[-6.93,42.52],[-6.82,42.49],[-6.84,42.41],[-6.73,42.32],[-7.03,42.07],[-6.96,42.03],[-7.01,41.95],[-7.18,41.98],[-7.23,41.87],[-7.43,41.81],[-7.7,41.91],[-7.88,41.85],[-7.91,41.93],[-8.17,41.82],[-8.22,41.91],[-8.08,42.05],[-8.19,42.07],[-8.16,42.24],[-8.26,42.25],[-8.37,42.49],[-8.17,42.57],[-7.89,42.54]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[2.07,42.29],[2.06,42.18],[1.97,42.2],[2.0,42.15],[2.49,42.07],[2.43,41.97],[2.48,41.92],[2.33,41.88],[2.35,41.81],[2.55,41.72],[2.78,41.74],[2.78,41.65],[2.56,41.58],[2.27,41.46],[2.12,41.29],[1.65,41.19],[1.57,41.26],[1.64,41.3],[1.4,41.51],[1.45,41.57],[1.36,41.61],[1.45,41.64],[1.38,41.71],[1.42,41.79],[1.59,41.78],[1.63,41.86],[1.57,41.88],[1.72,41.98],[1.65,42.0],[1.74,42.18],[1.67,42.28],[2.07,42.29]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-3.65,43.18],[-3.14,43.17],[-3.18,43.02],[-2.98,42.94],[-3.22,42.95],[-3.28,42.88],[-3.21,42.83],[-3.11,42.89],[-3.15,42.76],[-2.86,42.64],[-3.08,42.64],[-3.13,42.54],[-3.05,42.45],[-3.13,42.2],[-2.91,42.02],[-3.17,41.79],[-3.28,41.88],[-3.28,41.77],[-3.46,41.59],[-3.66,41.57],[-3.74,41.45],[-3.77,41.54],[-3.82,41.48],[-4.04,41.62],[-4.09,41.87],[-3.89,41.99],[-4.03,41.95],[-3.98,42.05],[-4.21,42.13],[-4.27,42.39],[-4.33,42.39],[-4.24,42.46],[-4.29,42.69],[-3.82,42.8],[-3.83,42.87],[-3.92,42.89],[-3.84,42.94],[-3.99,42.94],[-3.65,43.18]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-6.16,40.46],[-5.94,40.28],[-5.8,40.35],[-5.79,40.29],[-5.55,40.2],[-5.34,40.26],[-5.41,39.88],[-5.28,39.86],[-5.31,39.76],[-5.17,39.8],[-5.21,39.6],[-4.95,39.39],[-5.34,39.33],[-5.41,39.16],[-5.55,39.22],[-5.6,39.1],[-5.81,39.14],[-6.01,39.05],[-6.02,39.13],[-6.14,39.03],[-6.32,39.19],[-6.77,39.19],[-6.8,39.39],[-7.05,39.44],[-7.05,39.32],[-7.13,39.38],[-7.2,39.27],[-7.31,39.34],[-7.3,39.46],[-7.54,39.66],[-7.02,39.67],[-6.86,40.01],[-7.01,40.13],[-7.01,40.23],[-6.69,40.24],[-6.34,40.44],[-6.16,40.46]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-5.42,37.01],[-5.44,36.94],[-5.3,37.04],[-5.23,36.94],[-5.12,36.99],[-5.09,36.91],[-5.17,36.82],[-5.3,36.87],[-5.32,36.67],[-5.61,36.54],[-5.43,36.53],[-5.25,36.31],[-5.32,36.23],[-5.34,36.15],[-5.44,36.16],[-5.43,36.07],[-5.61,36.0],[-5.91,36.18],[-6.03,36.18],[-6.31,36.53],[-6.23,36.46],[-6.17,36.52],[-6.25,36.51],[-6.23,36.58],[-6.39,36.63],[-6.44,36.74],[-6.34,36.79],[-6.33,36.9],[-5.89,36.84],[-5.67,36.98],[-5.53,36.89],[-5.51,37.03],[-5.42,37.01]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-0.14,40.79],[0.04,40.69],[0.23,40.73],[0.28,40.63],[0.51,40.52],[-0.19,39.72],[-0.33,39.8],[-0.46,39.71],[-0.53,39.8],[-0.65,39.75],[-0.84,39.98],[-0.61,40.07],[-0.54,40.25],[-0.43,40.24],[-0.28,40.37],[-0.35,40.44],[-0.27,40.47],[-0.29,40.61],[-0.38,40.66],[-0.14,40.79]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-4.04,39.58],[-4.15,39.36],[-3.86,39.26],[-3.53,39.3],[-3.16,39.5],[-2.93,39.47],[-2.88,39.35],[-2.78,39.39],[-2.72,39.27],[-2.88,38.94],[-2.64,38.74],[-2.67,38.65],[-3.0,38.41],[-3.06,38.48],[-3.33,38.48],[-3.45,38.4],[-3.58,38.45],[-3.92,38.37],[-4.26,38.4],[-4.29,38.34],[-5.05,38.73],[-4.83,38.94],[-4.96,39.06],[-4.83,39.05],[-4.81,39.2],[-4.65,39.17],[-4.76,39.32],[-4.69,39.45],[-4.52,39.56],[-4.46,39.48],[-4.24,39.48],[-4.16,39.58],[-4.04,39.58]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-3.0,38.41],[-2.6,38.51],[-2.57,38.41],[-2.48,38.4],[-2.45,38.19],[-2.78,37.92],[-2.98,37.6],[-3.22,37.64],[-3.4,37.56],[-3.51,37.62],[-3.95,37.38],[-4.22,37.62],[-4.16,37.68],[-4.29,37.8],[-4.28,38.02],[-4.16,38.15],[-4.27,38.4],[-3.92,38.37],[-3.57,38.45],[-3.47,38.4],[-3.33,38.48],[-3.06,38.48],[-3.0,38.41]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-5.0,38.71],[-4.21,38.3],[-4.16,38.15],[-4.28,38.02],[-4.29,37.8],[-4.21,37.78],[-4.24,37.72],[-4.16,37.68],[-4.22,37.62],[-4.0,37.4],[-4.24,37.34],[-4.33,37.18],[-4.38,37.28],[-4.6,37.21],[-4.67,37.33],[-4.82,37.36],[-5.0,37.71],[-5.35,37.58],[-5.41,37.65],[-5.31,37.77],[-5.58,38.12],[-5.52,38.21],[-5.58,38.4],[-5.18,38.72],[-5.0,38.71]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-2.27,40.64],[-1.92,40.59],[-1.72,40.28],[-1.44,40.2],[-1.38,40.02],[-1.17,40.01],[-1.26,39.7],[-1.42,39.65],[-1.52,39.55],[-1.51,39.42],[-1.77,39.28],[-2.1,39.36],[-2.05,39.27],[-2.29,39.23],[-2.51,39.34],[-2.88,39.35],[-2.91,39.64],[-3.13,39.87],[-3.1,39.99],[-3.16,40.06],[-3.01,40.21],[-2.91,40.16],[-2.82,40.21],[-2.78,40.45],[-2.52,40.42],[-2.55,40.52],[-2.38,40.54],[-2.4,40.61],[-2.3,40.57],[-2.27,40.64]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-2.61,38.06],[-2.21,37.92],[-2.29,37.88],[-2.31,37.63],[-2.39,37.63],[-2.36,37.52],[-2.64,37.39],[-2.66,37.21],[-2.85,37.28],[-2.95,37.1],[-3.03,37.11],[-2.98,36.98],[-3.13,36.75],[-3.73,36.72],[-3.83,36.86],[-4.27,37.01],[-4.33,37.18],[-4.24,37.34],[-3.84,37.39],[-3.79,37.49],[-3.51,37.62],[-3.4,37.56],[-3.22,37.64],[-2.98,37.6],[-2.61,38.06]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-2.87,41.32],[-2.59,41.22],[-2.6,41.15],[-2.42,41.06],[-2.13,41.12],[-2.06,41.07],[-2.05,41.15],[-1.96,41.17],[-1.8,41.09],[-1.54,40.82],[-1.55,40.6],[-1.68,40.59],[-1.81,40.4],[-1.96,40.61],[-2.4,40.61],[-2.38,40.54],[-2.54,40.53],[-2.52,40.42],[-2.78,40.44],[-2.82,40.2],[-3.07,40.16],[-3.11,40.29],[-3.19,40.25],[-3.13,40.41],[-3.2,40.51],[-3.3,40.54],[-3.32,40.66],[-3.47,40.69],[-3.44,40.76],[-3.51,40.79],[-3.39,41.0],[-3.54,41.17],[-3.4,41.21],[-3.42,41.27],[-2.87,41.32]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-1.79,43.4],[-1.73,43.29],[-1.91,43.23],[-1.9,43.14],[-2.04,42.98],[-2.24,42.9],[-2.6,42.98],[-2.41,43.32],[-2.35,43.3],[-2.2,43.31],[-2.13,43.29],[-1.92,43.33],[-1.86,43.37],[-1.79,43.4]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-6.85,38.18],[-6.58,38.02],[-6.37,38.05],[-6.13,37.9],[-6.13,37.79],[-6.48,37.73],[-6.54,37.65],[-6.4,37.61],[-6.31,37.43],[-6.38,37.34],[-6.35,36.8],[-6.52,36.98],[-6.92,37.18],[-6.83,37.11],[-7.06,37.21],[-7.38,37.17],[-7.43,37.25],[-7.52,37.55],[-7.42,37.76],[-7.26,37.98],[-7.0,38.02],[-6.97,38.17],[-6.85,38.18]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-0.72,42.92],[-0.57,42.78],[-0.31,42.85],[-0.06,42.69],[0.6,42.71],[0.77,42.61],[0.69,42.49],[0.77,42.35],[0.7,42.11],[0.56,41.94],[0.61,41.87],[0.33,41.68],[0.45,41.54],[0.34,41.41],[-0.05,41.36],[-0.16,41.59],[-0.52,41.73],[-0.52,41.84],[-0.66,41.96],[-0.88,42.0],[-0.76,42.07],[-0.73,42.3],[-0.78,42.39],[-0.81,42.27],[-0.92,42.26],[-0.82,42.4],[-0.93,42.51],[-0.92,42.7],[-0.82,42.9],[-0.72,42.92]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-4.89,43.24],[-4.73,43.05],[-4.94,42.76],[-4.87,42.71],[-4.9,42.39],[-5.05,42.26],[-5.11,42.31],[-5.24,42.21],[-5.39,42.22],[-5.38,42.04],[-5.53,42.1],[-5.59,42.05],[-5.67,42.14],[-6.72,42.21],[-6.82,42.49],[-7.08,42.51],[-7.05,42.69],[-6.87,42.79],[-6.85,42.91],[-6.49,42.92],[-6.36,43.06],[-6.23,43.01],[-6.08,43.08],[-5.8,42.96],[-5.69,43.06],[-5.49,43.02],[-5.1,43.1],[-5.08,43.18],[-4.89,43.24]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[0.66,42.84],[1.17,42.71],[1.36,42.72],[1.44,42.44],[1.73,42.5],[1.84,42.31],[1.67,42.28],[1.74,42.18],[1.65,42.0],[1.72,41.98],[1.57,41.88],[1.63,41.86],[1.59,41.78],[1.42,41.79],[1.4,41.56],[1.04,41.5],[1.07,41.46],[0.95,41.35],[0.39,41.28],[0.32,41.39],[0.45,41.54],[0.33,41.68],[0.61,41.87],[0.56,41.94],[0.66,42.01],[0.77,42.35],[0.69,42.49],[0.77,42.61],[0.66,42.69],[0.66,42.84]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-3.08,42.64],[-2.85,42.64],[-2.82,42.55],[-2.68,42.59],[-2.65,42.48],[-2.51,42.52],[-2.11,42.42],[-2.09,42.35],[-1.97,42.35],[-1.68,42.15],[-1.83,42.15],[-1.91,42.06],[-1.86,41.97],[-1.97,41.92],[-2.11,41.96],[-2.13,42.1],[-2.32,42.15],[-2.51,42.11],[-2.58,42.0],[-2.75,42.01],[-2.73,42.12],[-2.89,42.01],[-3.13,42.2],[-3.05,42.45],[-3.13,42.54],[-3.08,42.64]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-2.51,42.11],[-2.13,42.1],[-2.11,41.96],[-1.86,41.97],[-1.85,41.79],[-1.78,41.72],[-1.99,41.6],[-1.94,41.41],[-2.1,41.45],[-2.16,41.36],[-2.06,41.07],[-2.13,41.12],[-2.42,41.06],[-2.6,41.15],[-2.59,41.22],[-2.89,41.33],[-3.21,41.3],[-3.35,41.39],[-3.33,41.46],[-3.54,41.55],[-3.28,41.77],[-3.28,41.88],[-3.17,41.79],[-2.77,42.12],[-2.71,42.1],[-2.75,42.01],[-2.58,42.0],[-2.51,42.11]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-1.62,43.31],[-1.38,43.25],[-1.44,43.05],[-1.35,43.03],[-1.27,43.12],[-1.26,43.04],[-0.72,42.92],[-0.82,42.9],[-0.87,42.76],[-1.27,42.55],[-1.42,42.21],[-1.3,42.04],[-1.42,41.91],[-1.9,42.03],[-1.83,42.15],[-1.68,42.19],[-2.09,42.35],[-2.11,42.42],[-2.4,42.47],[-2.4,42.6],[-2.5,42.61],[-2.29,42.66],[-2.24,42.93],[-2.04,42.98],[-1.9,43.14],[-1.91,43.23],[-1.62,43.31]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-7.63,43.72],[-7.6,43.66],[-7.47,43.72],[-7.45,43.69],[-7.44,43.7],[-7.36,43.67],[-7.26,43.55],[-7.24,43.57],[-7.04,43.55],[-7.18,43.39],[-6.96,43.14],[-6.82,43.14],[-7.0,43.02],[-6.86,42.98],[-6.81,42.87],[-7.05,42.69],[-7.0,42.64],[-7.2,42.33],[-7.3,42.43],[-7.62,42.38],[-7.92,42.53],[-7.86,42.71],[-8.0,42.85],[-7.91,42.95],[-7.95,43.29],[-7.74,43.51],[-7.7,43.74],[-7.63,43.72]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-3.61,41.15],[-3.39,41.0],[-3.51,40.79],[-3.2,40.51],[-3.13,40.41],[-3.19,40.25],[-3.1,40.28],[-3.06,40.09],[-3.51,40.05],[-3.8,39.88],[-3.88,39.93],[-3.73,39.96],[-3.61,40.11],[-4.19,40.3],[-4.31,40.22],[-4.38,40.32],[-4.57,40.21],[-4.55,40.34],[-4.32,40.41],[-4.29,40.63],[-4.16,40.62],[-3.91,40.96],[-3.61,41.15]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-4.4,43.03],[-4.24,42.96],[-4.22,42.86],[-4.14,42.87],[-4.14,42.83],[-4.16,42.84],[-4.18,42.82],[-4.18,42.81],[-4.08,42.77],[-4.29,42.69],[-4.24,42.46],[-4.34,42.42],[-4.21,42.13],[-3.98,42.05],[-4.03,41.95],[-3.89,42.0],[-4.09,41.87],[-4.04,41.77],[-4.45,41.76],[-4.47,41.84],[-4.57,41.81],[-4.67,41.9],[-4.79,41.82],[-4.87,41.93],[-5.0,41.94],[-4.9,42.08],[-5.03,42.17],[-4.97,42.37],[-4.9,42.39],[-4.9,42.86],[-4.76,43.02],[-4.4,43.03]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-6.32,41.27],[-5.95,41.14],[-5.9,41.24],[-5.66,41.25],[-5.33,41.12],[-5.25,41.2],[-5.12,41.13],[-5.09,41.0],[-5.21,40.76],[-5.52,40.59],[-5.43,40.56],[-5.47,40.46],[-5.63,40.46],[-5.76,40.28],[-5.8,40.35],[-5.99,40.3],[-6.23,40.49],[-6.59,40.27],[-6.83,40.25],[-6.8,40.85],[-6.93,41.03],[-6.81,41.04],[-6.65,41.25],[-6.32,41.27]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-3.98,41.58],[-3.82,41.48],[-3.77,41.54],[-3.74,41.45],[-3.67,41.56],[-3.55,41.58],[-3.21,41.3],[-3.42,41.27],[-3.4,41.21],[-3.89,40.97],[-3.98,40.78],[-4.42,40.63],[-4.72,41.16],[-4.63,41.17],[-4.6,41.32],[-4.47,41.3],[-4.51,41.41],[-4.0,41.52],[-3.98,41.58]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-5.69,38.18],[-5.73,38.09],[-5.58,38.13],[-5.34,37.83],[-5.31,37.7],[-5.41,37.67],[-5.36,37.58],[-5.0,37.71],[-4.88,37.44],[-4.78,37.33],[-4.67,37.33],[-4.65,37.26],[-4.79,37.15],[-4.94,37.18],[-4.91,37.11],[-5.23,36.94],[-5.3,37.04],[-5.44,36.94],[-5.43,37.05],[-5.51,37.03],[-5.53,36.89],[-5.67,36.98],[-5.89,36.84],[-6.33,36.9],[-6.38,37.34],[-6.31,37.43],[-6.4,37.61],[-6.54,37.65],[-6.48,37.73],[-6.13,37.79],[-6.17,37.96],[-5.95,38.0],[-5.87,38.16],[-5.69,38.18]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-4.36,40.31],[-4.31,40.22],[-4.19,40.3],[-3.61,40.11],[-3.73,39.96],[-3.88,39.93],[-3.81,39.89],[-3.51,40.05],[-3.17,40.09],[-3.1,39.99],[-3.13,39.87],[-2.91,39.64],[-2.93,39.47],[-3.29,39.47],[-3.31,39.4],[-3.53,39.3],[-3.85,39.26],[-4.15,39.36],[-4.04,39.58],[-4.16,39.58],[-4.24,39.48],[-4.46,39.48],[-4.52,39.56],[-4.76,39.42],[-4.75,39.5],[-4.86,39.56],[-4.95,39.39],[-5.21,39.6],[-5.17,39.8],[-5.31,39.76],[-5.28,39.86],[-5.41,39.88],[-5.36,40.11],[-4.95,40.12],[-4.8,40.28],[-4.53,40.2],[-4.36,40.31]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[1.45,41.57],[1.4,41.51],[1.64,41.3],[1.57,41.26],[1.64,41.19],[1.22,41.1],[1.17,41.05],[0.97,41.03],[0.7,40.8],[0.88,40.72],[0.7,40.58],[0.62,40.55],[0.59,40.58],[0.65,40.57],[0.71,40.59],[0.75,40.64],[0.6,40.62],[0.51,40.52],[0.16,40.74],[0.28,40.82],[0.29,40.97],[0.2,41.13],[0.44,41.33],[0.95,41.35],[1.07,41.46],[1.04,41.5],[1.45,41.57]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-0.58,41.35],[0.04,41.05],[0.22,41.07],[0.28,40.82],[0.04,40.69],[-0.16,40.79],[-0.38,40.67],[-0.29,40.61],[-0.27,40.47],[-0.35,40.44],[-0.28,40.37],[-0.43,40.24],[-0.54,40.25],[-0.61,40.07],[-0.84,39.98],[-0.8,39.88],[-0.86,39.85],[-0.92,39.96],[-1.14,39.97],[-1.07,40.06],[-1.3,40.21],[-1.43,40.14],[-1.72,40.28],[-1.8,40.41],[-1.68,40.59],[-1.55,40.6],[-1.62,40.94],[-1.47,40.95],[-1.41,41.07],[-1.29,41.05],[-1.11,41.17],[-0.97,41.15],[-0.95,41.08],[-0.76,41.17],[-0.69,41.11],[-0.61,41.19],[-0.67,41.24],[-0.63,41.31],[-0.53,41.23],[-0.58,41.35]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-0.92,39.96],[-0.89,39.85],[-0.69,39.85],[-0.64,39.75],[-0.53,39.8],[-0.46,39.71],[-0.33,39.8],[-0.19,39.72],[-0.34,39.42],[-0.2,39.07],[-0.03,38.86],[-0.31,38.88],[-0.6,38.8],[-0.51,38.74],[-0.63,38.69],[-0.91,38.77],[-0.96,38.94],[-1.15,38.93],[-1.26,39.05],[-1.16,39.31],[-1.46,39.36],[-1.52,39.55],[-1.27,39.69],[-1.2,39.95],[-0.92,39.96]]],[[[-1.28,40.17],[-1.24,40.12],[-1.07,40.05],[-1.38,40.02],[-1.46,40.14],[-1.28,40.17]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-5.39,42.22],[-5.0,42.29],[-5.03,42.15],[-4.9,42.08],[-4.99,41.91],[-4.87,41.93],[-4.79,41.82],[-4.66,41.9],[-4.57,41.81],[-4.47,41.84],[-4.45,41.76],[-4.12,41.81],[-4.04,41.77],[-4.0,41.52],[-4.51,41.41],[-4.47,41.29],[-4.6,41.32],[-4.63,41.17],[-4.83,41.1],[-5.33,41.18],[-5.34,41.48],[-5.23,41.53],[-5.39,41.75],[-5.28,41.81],[-5.34,41.94],[-5.25,41.98],[-5.38,42.04],[-5.39,42.22]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-2.74,43.43],[-2.41,43.32],[-2.5,43.1],[-2.66,43.07],[-2.63,43.02],[-2.89,43.05],[-3.03,43.22],[-3.07,43.15],[-3.25,43.2],[-3.42,43.13],[-3.45,43.24],[-3.33,43.3],[-3.21,43.28],[-3.15,43.35],[-3.08,43.38],[-3.1,43.36],[-3.02,43.33],[-2.95,43.44],[-2.81,43.43],[-2.75,43.46],[-2.74,43.43]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-6.89,42.21],[-5.67,42.14],[-5.59,42.05],[-5.53,42.1],[-5.46,41.98],[-5.38,42.04],[-5.25,41.98],[-5.34,41.94],[-5.28,41.81],[-5.39,41.76],[-5.23,41.53],[-5.34,41.48],[-5.3,41.13],[-5.66,41.25],[-5.9,41.24],[-5.95,41.14],[-6.48,41.29],[-6.19,41.58],[-6.3,41.66],[-6.55,41.69],[-6.57,41.96],[-6.94,41.94],[-7.03,42.07],[-6.89,42.21]]]]}},{"type":"Feature","properties":{},"geometry":{"type":"MultiPolygon","coordinates":[[[[-0.9,42.74],[-0.93,42.51],[-0.82,42.4],[-0.92,42.26],[-0.81,42.27],[-0.78,42.39],[-0.73,42.3],[-0.76,42.07],[-0.88,42.0],[-0.66,41.96],[-0.52,41.84],[-0.52,41.73],[-0.16,41.59],[-0.05,41.36],[0.33,41.41],[0.38,41.24],[0.2,41.13],[0.22,41.07],[0.04,41.05],[-0.5,41.35],[-0.58,41.35],[-0.53,41.23],[-0.63,41.31],[-0.67,41.24],[-0.61,41.19],[-0.69,41.11],[-0.76,41.17],[-0.95,41.08],[-0.97,41.15],[-1.11,41.17],[-1.56,40.94],[-1.96,41.17],[-2.15,41.18],[-2.11,41.43],[-1.94,41.41],[-1.99,41.6],[-1.78,41.72],[-1.85,41.79],[-1.85,42.01],[-1.41,41.92],[-1.3,42.04],[-1.42,42.21],[-1.29,42.52],[-0.9,42.74]]]]}}]};
-const BAND = {"n":[[47.035,-8.8],[46.842,-8.543],[46.653,-8.287],[46.466,-8.03],[46.282,-7.774],[46.101,-7.517],[45.924,-7.26],[45.75,-7.004],[45.579,-6.747],[45.411,-6.491],[45.245,-6.234],[45.081,-5.977],[44.921,-5.721],[44.763,-5.464],[44.608,-5.207],[44.456,-4.951],[44.307,-4.694],[44.159,-4.438],[44.012,-4.181],[43.867,-3.924],[43.724,-3.668],[43.584,-3.411],[43.446,-3.155],[43.311,-2.898],[43.179,-2.641],[43.05,-2.385],[42.925,-2.128],[42.803,-1.872],[42.683,-1.615],[42.563,-1.358],[42.446,-1.102],[42.33,-0.845],[42.215,-0.588],[42.101,-0.332],[41.99,-0.075],[41.879,0.181],[41.77,0.438],[41.663,0.695],[41.557,0.951],[41.453,1.208],[41.35,1.464],[41.249,1.721],[41.149,1.978],[41.051,2.234],[40.955,2.491],[40.86,2.747],[40.766,3.004],[40.675,3.261],[40.585,3.517],[40.496,3.774],[40.41,4.031],[40.325,4.287],[40.242,4.544],[40.161,4.8],[40.081,5.057],[40.003,5.314],[39.927,5.57],[39.852,5.827],[39.779,6.083],[39.707,6.34]],"s":[[47.08,-14.395],[46.818,-14.074],[46.561,-13.753],[46.308,-13.432],[46.061,-13.111],[45.818,-12.79],[45.579,-12.469],[45.345,-12.148],[45.115,-11.828],[44.889,-11.507],[44.669,-11.186],[44.451,-10.865],[44.238,-10.544],[44.028,-10.223],[43.823,-9.902],[43.622,-9.581],[43.425,-9.26],[43.231,-8.939],[43.041,-8.618],[42.853,-8.297],[42.67,-7.976],[42.49,-7.655],[42.315,-7.334],[42.143,-7.014],[41.972,-6.693],[41.803,-6.372],[41.636,-6.051],[41.472,-5.73],[41.312,-5.409],[41.155,-5.088],[41.004,-4.767],[40.858,-4.446],[40.718,-4.125],[40.583,-3.804],[40.45,-3.483],[40.317,-3.162],[40.186,-2.841],[40.055,-2.521],[39.926,-2.2],[39.799,-1.879],[39.673,-1.558],[39.548,-1.237],[39.426,-0.916],[39.305,-0.595],[39.186,-0.274],[39.068,0.047],[38.953,0.368],[38.84,0.689],[38.73,1.01],[38.622,1.331],[38.516,1.652],[38.412,1.973],[38.312,2.293],[38.214,2.614],[38.118,2.935],[38.026,3.256],[37.937,3.577],[37.851,3.898],[37.768,4.219],[37.688,4.54]],"c":[[47.098,-11.713],[46.869,-11.423],[46.644,-11.132],[46.423,-10.842],[46.206,-10.552],[45.993,-10.261],[45.784,-9.971],[45.579,-9.681],[45.376,-9.391],[45.177,-9.1],[44.982,-8.81],[44.791,-8.52],[44.603,-8.229],[44.419,-7.939],[44.237,-7.649],[44.057,-7.358],[43.881,-7.068],[43.709,-6.778],[43.54,-6.488],[43.375,-6.197],[43.213,-5.907],[43.052,-5.617],[42.893,-5.326],[42.737,-5.036],[42.583,-4.746],[42.432,-4.455],[42.284,-4.165],[42.14,-3.875],[42.0,-3.584],[41.864,-3.294],[41.732,-3.004],[41.603,-2.714],[41.475,-2.423],[41.348,-2.133],[41.223,-1.843],[41.1,-1.552],[40.979,-1.262],[40.859,-0.972],[40.741,-0.681],[40.625,-0.391],[40.51,-0.101],[40.397,0.19],[40.286,0.48],[40.176,0.77],[40.068,1.06],[39.962,1.351],[39.858,1.641],[39.755,1.931],[39.654,2.222],[39.554,2.512],[39.456,2.802],[39.36,3.093],[39.267,3.383],[39.176,3.673],[39.088,3.963],[39.002,4.254],[38.919,4.544],[38.837,4.834],[38.757,5.125],[38.678,5.415]]};
-
-/* ===== Karte (offline-fähig, keine Tiles) ===== */
-(function(){
-  let mapInit = false;
-  function initMap(){
-    if(mapInit || typeof L === "undefined") return;
-    mapInit = true;
-    const map = L.map("eclipse-map", {scrollWheelZoom:false, attributionControl:false}).setView([41.5,-2.5], 7);
-    map.getContainer().style.background = "#dfe8ef"; /* Meer */
-
-    L.geoJSON(SPAIN_GEO, {style:{color:"#b9b39f", weight:1, fillColor:"#faf6ee", fillOpacity:1}}).addTo(map);
-
-    /* Umbra-Band: N-Grenze W→O + S-Grenze O→W (Espenak, PCHIP-verdichtet) */
-    const poly = BAND.n.concat(BAND.s.slice().reverse());
-    L.polygon(poly, {color:"#23255c", weight:1.5, fillColor:"#23255c", fillOpacity:0.14}).addTo(map)
-      .bindPopup("<b>Totalitätszone (Umbra)</b>Espenak-Pfaddaten. Nur hier wird es dunkel — Madrid (99,9 % partiell) liegt knapp draußen.");
-    L.polyline(BAND.c, {color:"#e8632c", weight:2, dashArray:"6 6"}).addTo(map)
-      .bindPopup("<b>Zentrallinie</b>Maximale Dauer (~1:44 über Soria). Dauer fällt zum Rand hin auf 0.");
-    [["Südgrenze",BAND.s],["Nordgrenze",BAND.n]].forEach(([n,l])=>
-      L.polyline(l,{color:"#23255c",weight:1.5,dashArray:"2 5"}).addTo(map).bindPopup("<b>"+n+" der Totalität</b>"));
-
-    /* Städte-Label zur Orientierung */
-    [["Madrid",40.4168,-3.7038],["Zaragoza",41.65,-0.88],["Soria",41.766,-2.464],["Burgos",42.34,-3.70],["Valencia",39.47,-0.38]].forEach(([n,la,lo])=>{
-      L.circleMarker([la,lo],{radius:2.5,color:"#6b6a5e",fillColor:"#6b6a5e",fillOpacity:1})
-        .addTo(map).bindTooltip(n,{permanent:true,direction:"right",className:"city-lbl",offset:[4,0]});
-    });
-
-    const C = {green:"#3d7a4a", blue:"#23255c", orange:"#e8632c", red:"#b8452b"};
-    const spots = [
-      {ll:[41.4897,-2.5382], c:"green", n:"⭐ ALMAZÁN — Empfehlung Nr. 1", t:"~1:40", a:"Área Arboleda: gratis, 72 h, WC-Entsorgung, 12 min ins Zentrum. Nahe Zentrallinie, habilitierte Enklave + Perseiden-Programm. Eclipse & Schlafen an einem Ort. ~2:15 h ab Madrid."},
-      {ll:[41.1713,-2.4312], c:"green", n:"MEDINACELI — Plateau-Romantik", t:"~1:30", a:"Área am Ortsrand (48 h, gratis), 1200-m-Panorama, Römerbogen. Kürzeste Fahrt (~1:45 h), weiter südlich im Band → kürzere Totalität."},
-      {ll:[41.0752,-2.6361], c:"green", n:"SIGÜENZA — mit Fragezeichen", t:"~1:38", a:"Área Recinto ferial — evtl. Fiestas-belegt, vorher anrufen: 949 347 007. Nur ~1:20 h ab Madrid."},
-      {ll:[41.8135,-2.4726], c:"blue", n:"GARRAY-NUMANCIA (offiz. Punkt)", t:"~1:42", a:"Fast auf der Zentrallinie, Numancia-Kulisse. Nur Tagesplatz → danach ~40 min nach Almazán."},
-      {ll:[41.6667,-1.8990], c:"blue", n:"BOROBIA (offiz. Punkt)", t:"~1:40", a:"Observatorium, leerster Spot, Perseiden-Nacht geplant. ~3 h ab Madrid, nur ~35 min bis Épila."},
-      {ll:[41.8571,-1.9200], c:"blue", n:"ÁGREDA (offiz. Punkt)", t:"~1:40", a:"Cerro de la Coronación: Parken + Trinkwasser. Nur Tagesplatz, weit."},
-      {ll:[41.7920,-2.5300], c:"red", n:"VALONSADERO — meiden", t:"1:42 (102 s)", a:"Shuttle-Konzept + größte Massen. Fürs Auto-Camping ungeeignet."},
-      {ll:[41.5588,-1.1989], c:"orange", n:"🎫 POGA ÉPILA — Fallback (GEBUCHT)", t:"1:32 (92 s)", a:"Ticket ECL26-1814 ✓. Südlicher im Band (kürzer), aber beste Klarhimmel-Statistik + Backup-Screen. Zugang 10.–14.08. frei rein/raus."},
-      {ll:[40.4168,-3.7038], c:"red", n:"MADRID — Start, NICHT gucken", t:"0 s", a:"Südgrenze verläuft ~13 km nördlich der Stadt! Spätestens 12:30 auf die A-2."},
-      {ll:[41.1932,-1.7825], c:"green", n:"Monasterio de Piedra (Tag 13)", t:"—", a:"Wasserfälle + Schluchtpark, 4,7★, Richtung Madrid. 10–18 Uhr."}
-    ];
-    spots.forEach(s => L.circleMarker(s.ll, {radius:9,color:"#fff",weight:2,fillColor:C[s.c],fillOpacity:1})
-      .addTo(map).bindPopup("<b>"+s.n+"</b><span class='pm'>Totalität: "+s.t+"</span>"+s.a));
-    setTimeout(()=>map.invalidateSize(),100);
-  }
-  document.querySelectorAll(".tab").forEach(t=>{
-    t.addEventListener("click",()=>{ if(t.dataset.tab==="map") setTimeout(initMap,50); });
-  });
-})();
-
 /* ===== Wetter (Open-Meteo) ===== */
 (function(){
   const SPOTS = [
@@ -1637,7 +1631,7 @@ const BAND = {"n":[[47.035,-8.8],[46.842,-8.543],[46.653,-8.287],[46.466,-8.03],
   }
   document.getElementById("wx-refresh").addEventListener("click", load);
   document.querySelectorAll(".tab").forEach(t=>{
-    t.addEventListener("click",()=>{ if(t.dataset.tab==="wx" && !document.getElementById("wx-table").innerHTML) load(); });
+    t.addEventListener("click",()=>{ if(t.dataset.tab==="trip" && !document.getElementById("wx-table").innerHTML) load(); });
   });
 })();
 
@@ -1725,6 +1719,75 @@ const BAND = {"n":[[47.035,-8.8],[46.842,-8.543],[46.653,-8.287],[46.466,-8.03],
     t.addEventListener("click",()=>{
       if(t.dataset.tab==="malaga") setTimeout(()=>initCity("malaga","map-mal",[36.7205,-4.4095],14,HOME_MAL,MAL),50);
       if(t.dataset.tab==="madrid") setTimeout(()=>initCity("madrid","map-mad",[40.4155,-3.7005],14,HOME_MAD,MAD),50);
+    });
+  });
+})();
+
+/* ===== Roadtrip-Stationen ===== */
+(function(){
+  const TRIP = [
+    {n:"Decathlon Alcalá de Henares", ll:[40.4951,-3.3607], tags:["12.","Einkauf"], eff:"Stopp 30 min", pr:"~25 € (Stühle+Schirm)", du:"direkt an der A-2, km 28",
+     d:"ERSTER STOPP am 12.: 2 Faltstühle + Sonnenschirm/Tarp (null Schatten am Spot!), ggf. Hoody-Nachkauf. Carrefour für den Lebensmittel-Großeinkauf ist 5 min weiter — beides in einem Abwasch statt Innenstadt-Madrid.", url:"https://www.decathlon.es/es/store-locator"},
+    {n:"Alcalá de Henares Altstadt", ll:[40.4820,-3.3635], tags:["14.","Ort"], eff:"1–1,5 h", pr:"gratis (Uni-Führung ~6 €)", du:"UNESCO",
+     d:"Cervantes-Geburtsstadt, Plaza de Cervantes, historische Universität. Am 12. KEINE Zeit dafür — aber am 14. auf dem Rückweg der perfekte Mittagsstopp mit Tapas auf der Calle Mayor (längste Laubengang-Straße Spaniens).", url:"https://www.turismoalcala.es"},
+    {n:"Sigüenza", ll:[41.0689,-2.6412], tags:["12.","14.","Ort"], eff:"1–2 h", pr:"Kathedrale ~7 €", du:"15 min ab A-2",
+     d:"Mittelalterstädtchen mit Burg (heute Parador — Kaffee mit Aussicht!) und Kathedrale mit dem berühmten 'Doncel'-Grabmal. Am 12. nur falls ihr SEHR früh dran seid, sonst 14. vormittags.", url:"https://www.siguenza.es"},
+    {n:"Medinaceli", ll:[41.1713,-2.4312], tags:["12.","Spot","Ort"], eff:"Spot / 1 h", pr:"gratis", du:"Plateau 1200 m",
+     d:"Spot-Kandidat C: Área am Ortsrand (48 h legal), römischer Triumphbogen, Panorama-Westhorizont direkt am Ort. Auch nur als Foto-Stopp auf der Hinfahrt lohnend — Entscheidungspunkt der Route (km 150)!", url:"https://medinaceli.es"},
+    {n:"Almazán (nur noch Zwischenstopp!)", ll:[41.4897,-2.5382], tags:["12.","Ort"], eff:"Stopp 1 h", pr:"gratis", du:"Altstadt am Duero",
+     d:"⚠️ KORREKTUR: Das Área de Autocaravanas ist laut offiziellem Aushang NUR für Wohnmobile/homologierte Fahrzeuge — Mietwagen verboten, Verstöße werden sanktioniert. Keine Reservierung, ab 10./11. voll. Almazán taugt als Hinfahrt-Stopp oder Eclipse-Guckpunkt (normale Parkplätze im Ort), aber NICHT als Übernachtung. Basis = Épila.", url:"https://almazan.es/turismo/servicios-turisticos/autocaravanas/"},
+    {n:"Castillo de Gormaz", ll:[41.4930,-3.0027], tags:["13.","Ort","Aussicht"], eff:"1–1,5 h, kurzer Anstieg", pr:"gratis", du:"35 min von Almazán",
+     d:"Größte Kalifats-Festung Europas (10. Jh.), 1,2 km Mauerring auf einem Bergrücken über dem Duero — fast immer menschenleer, 360°-Blick. Der Soria-Geheimtipp für den 13., falls ihr im Korridor geblieben seid.", url:"https://www.sorianitelaimaginas.com/lugares-de-interes/fortaleza-califal-de-gormaz/"},
+    {n:"🎫 POGA Épila (gebucht)", ll:[41.5588,-1.1989], tags:["12.","Spot"], eff:"Basis", pr:"10 € ✓", du:"Zugang 10.–14.08.",
+     d:"Fallback/Basis mit Ticket ECL26-1814: legal campen, WC, Gastro, Backup-Screen, 92 s Totalität. Freies Rein & Raus → als Basislager für den 13. nutzbar (2. Nacht inklusive). QR ausgedruckt hinter die Scheibe!", url:"https://www.turismodearagon.com/tickets-eclipse/"},
+    {n:"Zaragoza", ll:[41.6563,-0.8773], tags:["13.","Ort"], eff:"halber Tag", pr:"Pilar gratis, Aljafería ~5 €", du:"40 min von Épila",
+     d:"Die naheliegende 13.-Option ab Épila: Basílica del Pilar am Ebro (Turm-Lift für den Blick), Aljafería-Palast (maurisches Juwel, Vorbild der Alhambra-Restauratoren), Tapas im El-Tubo-Viertel. Bei 36 °C: Aljafería mittags (kühl), Pilar abends.", url:"https://www.zaragoza.es/sede/portal/turismo/"},
+    {n:"Belchite (Ruinen-Dorf)", ll:[41.3033,-0.7550], tags:["13.","Ort"], eff:"Führung ~1,5 h", pr:"~8 €, nur mit Guide", du:"50 min von Épila",
+     d:"Gänsehaut-Ort: das im Bürgerkrieg zerstörte Dorf wurde nie wieder aufgebaut und steht als Ruinenfeld — Besuch nur mit Führung, vorab online buchen. Einer der eindrücklichsten Orte Aragóns.", url:"https://belchiteturismo.es"},
+    {n:"Fuendetodos (Goya)", ll:[41.3417,-0.9583], tags:["13.","Ort"], eff:"45 min", pr:"~3 €", du:"45 min von Épila",
+     d:"Goyas Geburtshaus + Grafik-Museum in einem 130-Seelen-Dorf. Klein, schnell, gut mit Belchite kombinierbar (20 min auseinander).", url:"https://fuendetodos.org"},
+    {n:"Tarazona + Moncayo", ll:[41.9047,-1.7237], tags:["13.","Ort","Kühl"], eff:"halber Tag", pr:"Kathedrale ~4 €", du:"1 h von Épila",
+     d:"Mudéjar-Städtchen mit schiefem Rathaus-Fries, dahinter der Moncayo (2315 m): auf 1000+ m im Buchenwald ist es 8–10 °C kühler — die Anti-Hitze-Option. Achtung: Zugangsbeschränkungen Naturpark wegen Brandlage checken.", url:"https://tarazona.es"},
+    {n:"Monasterio de Piedra", ll:[41.1932,-1.7825], tags:["13.","14.","Natur"], eff:"3–4 h Rundweg", pr:"~18 €", du:"1 h von Épila, Richtung Madrid",
+     d:"Wasserfälle, Grotten, Schluchtpark ums Zisterzienserkloster — 4,7★. Perfekt am 13. ODER als 14.-Vormittagsstopp Richtung Madrid (über Calatayud zur A-2). 10–18 Uhr, Proviant VORHER (kein Rein-Raus), vormittags kühler+leerer.", url:"https://monasteriopiedra.com"},
+    {n:"El Escorial", ll:[40.5892,-4.1478], tags:["14.","Ort"], eff:"2 h", pr:"~14 €", du:"NW von Madrid — Umweg!",
+     d:"Riesiges Klosterschloss Philipps II. EHRLICH: liegt auf der FALSCHEN Seite Madrids für euren Rückweg von Osten — nur machbar mit sehr frühem Start und Operación-Salida-Risiko. Eher streichen, Alcalá ist der bessere 14.-Stopp.", url:"https://www.patrimonionacional.es/visita/real-sitio-de-san-lorenzo-de-el-escorial"}
+  ];
+
+  function gurl(pts){
+    const p = pts.map(x=>x[0]+","+x[1]);
+    return "https://www.google.com/maps/dir/?api=1&travelmode=driving&destination="+p[p.length-1]+"&waypoints="+encodeURIComponent(p.slice(0,-1).join("|"));
+  }
+  const MADRID = [40.4076,-3.6893]; /* Atocha/Mietwagen */
+  document.getElementById("gmaps-trip-a").href = gurl([MADRID,[40.4951,-3.3607],[41.1713,-2.4312],[41.4897,-2.5382]]);
+  document.getElementById("gmaps-trip-b").href = gurl([MADRID,[40.4951,-3.3607],[41.5588,-1.1989]]);
+
+  const el = document.getElementById("acts-trip");
+  el.innerHTML = TRIP.map((a,i)=>`
+    <div class="act">
+      <div class="act-head"><span class="act-num">${i+1}</span><span class="act-name">${a.n}</span></div>
+      <div class="chips">${a.tags.map(t=>`<span class="chip${["12.","Spot","Einkauf"].includes(t)?" hot":""}">${t}</span>`).join("")}</div>
+      <div class="act-meta">⏱ ${a.eff} · 💶 ${a.pr} · 📍 ${a.du}</div>
+      <div class="act-desc">${a.d}</div>
+      <div class="act-links"><a href="${a.url}" target="_blank" rel="noopener">Offizielle Seite ↗</a><a href="https://maps.google.com/?q=${a.ll[0]},${a.ll[1]}" target="_blank" rel="noopener">In Maps öffnen ↗</a></div>
+    </div>`).join("");
+
+  let tripMap = false;
+  document.querySelectorAll(".tab").forEach(t=>{
+    t.addEventListener("click",()=>{
+      if(t.dataset.tab!=="trip" || tripMap || typeof L==="undefined") return;
+      tripMap = true;
+      setTimeout(()=>{
+        const map = L.map("map-trip", {scrollWheelZoom:false}).setView([41.15,-2.3], 8);
+        try{ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap"}).addTo(map); }catch(e){}
+        L.marker(MADRID,{icon:L.divIcon({html:"🚗",className:"",iconSize:[24,24],iconAnchor:[12,12]})}).addTo(map).bindPopup("<b>Start: Mietwagen Madrid-Atocha</b>");
+        TRIP.forEach((a,i)=>{
+          const spot = a.tags.includes("Spot");
+          L.marker(a.ll,{icon:L.divIcon({html:`<div class='num-marker' style='${spot?"background:#e8632c":""}'>${i+1}</div>`,className:"",iconSize:[24,24],iconAnchor:[12,12]})})
+            .addTo(map).bindPopup(`<b>${i+1}. ${a.n}</b><span class='pm'>${a.tags.join(" · ")} · ${a.eff}</span>${a.d.slice(0,140)}…`);
+        });
+        setTimeout(()=>map.invalidateSize(),100);
+      },50);
     });
   });
 })();
